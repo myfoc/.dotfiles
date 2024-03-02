@@ -10,7 +10,7 @@
     systemd-boot = {
       enable = true;
       configurationLimit = 5;
-    }
+    };
     efi.canTouchEfiVariables = true;
   };
 
@@ -43,13 +43,15 @@
     enable = true;
     layout = "us";
     xkbVariant = "eurosign:e";
-    displayManager.lightdm.enable = true;
-    windowManager = {
-      qtile.enable = true;
-      gnome.enable = true;
-      default = "qtile";
+    desktopManager.gnome.enable = true;
+    windowManager.qtile.enable = true;
+    displayManager = {
+      gdm.enable = true;
+      defaultSession = "none+qtile";
     };
   };
+
+  nixpkgs.config.allowUnfree = true;
 
   users.users.cofymdd = {
     isNormalUser = true;
@@ -59,8 +61,6 @@
       firefox
     ];
   };
-
-  nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     kitty
