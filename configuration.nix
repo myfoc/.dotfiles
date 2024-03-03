@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -36,17 +36,19 @@
     };
   };
 
-  services.qemuGuest.enable = true;
-  services.spice-vdagentd.enable = true;
-
-  services.xserver = {
-    enable = true;
-    layout = "us";
-    desktopManager.gnome.enable = true;
-    windowManager.qtile.enable = true;
-    displayManager = {
-      gdm.enable = true;
-      defaultSession = "none+qtile";
+  services = {
+    qemuGuest.enable = true;
+    spice-vdagentd.enable = true;
+    
+    xserver = {
+      enable = true;
+      layout = "us";
+      desktopManager.gnome.enable = true;
+      windowManager.qtile.enable = true;
+      displayManager = {
+        gdm.enable = true;
+        defaultSession = "none+qtile";
+      };
     };
   };
 
@@ -66,9 +68,6 @@
     nano
     wget
     git
-    qtile
-    python3
-    mypy
   ];
 
   system.stateVersion = "23.11";
