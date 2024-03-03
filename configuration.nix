@@ -1,4 +1,5 @@
 { config, pkgs, lib, ... }:
+
 {
   imports = [ ./hardware-configuration.nix ];
 
@@ -22,23 +23,12 @@
   services = {    
     xserver = {
       enable = true;
-      screenSection = ''
-        Option "DPI" "192 x 192"
-      '';
-      dpi = 120;
       layout = "us";
-      windowManager.qtile = {
-        enable = true;
-        backend = "wayland";
-      };
+      windowManager.dwm.enable = true;
       displayManager = {
-        sddm = {
-          enable = true;
-          wayland.enable = true;
-        };
-        defaultSession = "none+qtile";
+        sddm.enable = true;
+        defaultSession = "none+dwm";
       };
-      libinput.enable = true;
     };
   };
 
@@ -53,11 +43,12 @@
 
   environment.systemPackages = with pkgs; [
     firefox
-    qtile
-    foot
+    dmenu
     nano
     wget
     git
+    dwm
+    st
   ];
 
   system.stateVersion = "23.11";
