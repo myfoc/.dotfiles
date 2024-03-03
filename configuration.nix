@@ -1,5 +1,4 @@
 { config, pkgs, lib, ... }:
-
 {
   imports = [ ./hardware-configuration.nix ];
 
@@ -23,7 +22,9 @@
   services = {    
     xserver = {
       enable = true;
-      screenSection = ''Option "DPI" "192 x 192"'';
+      screenSection = ''
+        Option "DPI" "192 x 192"
+      '';
       dpi = 120;
       layout = "us";
       windowManager.qtile = {
@@ -47,12 +48,11 @@
     isNormalUser = true;
     description = "CofymDD";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-    ];
+    packages = with pkgs; [];
   };
 
   environment.systemPackages = with pkgs; [
+    firefox
     qtile
     foot
     nano
