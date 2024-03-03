@@ -1,4 +1,5 @@
 { config, pkgs, lib, ... }:
+
 {
   imports = [ ./hardware-configuration.nix ];
 
@@ -17,27 +18,13 @@
 
   time.timeZone = "Europe/Bratislava";
 
-  i18n = {
-    defaultLocale = "ru_RU.UTF-8";
-    extraLocaleSettings = {
-      LC_ADDRESS = "ru_RU.UTF-8";
-      LC_IDENTIFICATION = "ru_RU.UTF-8";
-      LC_MEASUREMENT = "ru_RU.UTF-8";
-      LC_MONETARY = "ru_RU.UTF-8";
-      LC_NAME = "ru_RU.UTF-8";
-      LC_NUMERIC = "ru_RU.UTF-8";
-      LC_PAPER = "ru_RU.UTF-8";
-      LC_TELEPHONE = "ru_RU.UTF-8";
-      LC_TIME = "ru_RU.UTF-8";
-    };
-  };
+  i18n.defaultLocale = "ru_RU.UTF-8";
 
-  services = {
-    qemuGuest.enable = true;
-    spice-vdagentd.enable = true;
-    
+  services = {    
     xserver = {
       enable = true;
+      screenSection = ''Option "DPI" "192 x 192"'';
+      dpi = 120;
       layout = "us";
       windowManager.qtile = {
         enable = true;
@@ -53,8 +40,6 @@
       libinput.enable = true;
     };
   };
-
-  programs.xwayland.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
