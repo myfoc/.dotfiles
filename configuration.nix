@@ -67,6 +67,8 @@
     wget
     git
     qtile
+    python3
+    mypy
   ];
 
   system.stateVersion = "23.11";
