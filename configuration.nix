@@ -18,7 +18,7 @@
 
   time.timeZone = "Europe/Bratislava";
 
-  i18n.defaultLocale = "ru_RU.UTF-8";
+  i18n.defaultLocale = "en_US.UTF-8";
 
   services = {    
     xserver = {
@@ -26,8 +26,13 @@
       layout = "us";
       windowManager.dwm.enable = true;
       displayManager = {
-        sddm.enable = true;
-        defaultSession = "none+dwm";
+        lightdm = {
+          enable = true;
+          autoLogin = {
+            enable = true;
+            user = "cofymdd";
+          };
+        };
       };
     };
   };
@@ -38,17 +43,18 @@
     isNormalUser = true;
     description = "CofymDD";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [ neofetch ];
   };
 
   environment.systemPackages = with pkgs; [
-    firefox
+    st
+    dwm
     dmenu
+    feh
+    firefox
     nano
     wget
     git
-    dwm
-    st
   ];
 
   system.stateVersion = "23.11";
