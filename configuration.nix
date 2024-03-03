@@ -1,10 +1,6 @@
 { config, pkgs, lib, ... }:
-
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [ ./hardware-configuration.nix ];
 
   boot.loader = { 
     systemd-boot = {
@@ -43,14 +39,22 @@
     xserver = {
       enable = true;
       layout = "us";
-      desktopManager.gnome.enable = true;
-      windowManager.qtile.enable = true;
+      windowManager.qtile = {
+        enable = true;
+        backend = "wayland":
+      };
       displayManager = {
-        gdm.enable = true;
+        sddm = {
+          enable = true;
+          wayland.enable = true;
+        };
         defaultSession = "none+qtile";
       };
+      libinput.enable = true;
     };
   };
+
+  programs.xwayland.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
@@ -64,7 +68,8 @@
   };
 
   environment.systemPackages = with pkgs; [
-    st
+    qtile
+    foot
     nano
     wget
     git
