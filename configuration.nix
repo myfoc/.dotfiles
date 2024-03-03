@@ -41,7 +41,7 @@
       layout = "us";
       windowManager.qtile = {
         enable = true;
-        backend = "wayland":
+        backend = "wayland";
       };
       displayManager = {
         sddm = {
