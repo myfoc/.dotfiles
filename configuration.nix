@@ -42,7 +42,6 @@
   services.xserver = {
     enable = true;
     layout = "us";
-    xkbVariant = "eurosign:e";
     desktopManager.gnome.enable = true;
     windowManager.qtile.enable = true;
     displayManager = {
@@ -63,10 +62,11 @@
   };
 
   environment.systemPackages = with pkgs; [
-    kitty
+    st
     nano
     wget
     git
+    qtile
   ];
 
   system.stateVersion = "23.11";
