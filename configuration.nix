@@ -24,14 +24,12 @@
     xserver = {
       enable = true;
       layout = "us";
-      windowManager.dwm.enable = true;
+      windowManager.sway.enable = true;
       displayManager = {
-        lightdm = {
+        lightdm.enable = true;
+        autoLogin = {
           enable = true;
-          autoLogin = {
-            enable = true;
-            user = "cofymdd";
-          };
+          user = "cofymdd";
         };
       };
     };
@@ -47,10 +45,8 @@
   };
 
   environment.systemPackages = with pkgs; [
-    st
-    dwm
-    dmenu
-    feh
+    foot
+    sway
     firefox
     nano
     wget
