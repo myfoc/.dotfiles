@@ -8,7 +8,7 @@
   outputs = { self, nixpkgs, home-manager, ...}@inputs: 
   let
     system = "aarch64-linux";
-    pkgs = nixpkgs.legacyPackages.${system}
+    pkgs = nixpkgs.legacyPackages.${system};ß
     inherit (self) outputs;
   in {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {

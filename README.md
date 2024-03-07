@@ -4,11 +4,11 @@ cd
 ```
 
 ```
-rm -r .dotfiles
+sudo rm -r .dotfiles
 ```
 
 ```
-git clone https://github.com/CofymDD/.dotfiles.git
+sudo git clone https://github.com/CofymDD/.dotfiles.git
 ```
 
 ```
