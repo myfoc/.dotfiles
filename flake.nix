@@ -5,17 +5,15 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
   };
 
-  outputs = { self, nixpkgs, home-manager, ...}@inputs: 
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
   let
     system = "aarch64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
     inherit (self) outputs;
   in {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs outputs;};
-      modules = [ 
-        ./nixos/configuration.nix
-      ];
+      specialArgs = { inherit inputs outputs; };
+      modules = [ ./nixos/configuration.nix ];
     };
   };
 }
