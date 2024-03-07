@@ -1,8 +1,16 @@
 # Install
 ```
-sudo wget https://raw.githubusercontent.com/CofymDD/.dotfiles/main/configuration.nix -O /etc/nixos/configuration.nix
+cd
 ```
 
 ```
-sudo nixos-rebuild switch
+rm -r .dotfiles
+```
+
+```
+git clone https://github.com/CofymDD/.dotfiles.git
+```
+
+```
+sudo nixos-rebuild switch --flake .
 ```

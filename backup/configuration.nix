@@ -24,9 +24,19 @@
     xserver = {
       enable = true;
       layout = "us";
+      displayManager = {
+        autoLogin = {
+          enable = true;
+          user = "cofymdd";
+        };
+      };
+    };
+    
+    xserver = {
+      enable = true;
+      layout = "us";
       windowManager.sway.enable = true;
       displayManager = {
-        lightdm.enable = true;
         autoLogin = {
           enable = true;
           user = "cofymdd";
