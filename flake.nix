@@ -14,7 +14,7 @@
   let
     systemSettings = {
       system = "aarch64-linux";
-      hostname = "cofymdd";
+      hostname = "nixos";
       timezone = "Europe/Bratislava";
       locale = "en_US.UTF-8";
       version = "23.11";
