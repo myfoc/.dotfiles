@@ -14,7 +14,7 @@
   let
     systemSettings = {
       system = "aarch64-linux";
-      hostname = "nixos";
+      hostname = "cofymdd";
       timezone = "Europe/Bratislava";
       locale = "en_US.UTF-8";
       version = "23.11";
@@ -38,7 +38,7 @@
         home-manager.nixosModules.home-manager {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.${userSettings.user} = import ./home-manager/home.nix;
+          home-manager.users.userSettings.user = import ./home-manager/home.nix;
           home-manager.extraSpecialArgs = { 
             inherit systemSettings;
             inherit userSettings;
