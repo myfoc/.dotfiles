@@ -1,4 +1,4 @@
-{ systemSettings, ... }: {
+{ inputs, systemSettings, ... }: {
   fileSystems."/" = {
     device = "/dev/sda1";
     fsType = "ext4";
