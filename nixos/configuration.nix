@@ -31,7 +31,7 @@
   };
 
   users.users = {
-    cofymdd = {
+    ${username} = {
       isNormalUser = true;
       description = "CofymDD";
       extraGroups = [ "networkmanager" "wheel" ];
