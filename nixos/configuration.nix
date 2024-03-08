@@ -1,4 +1,4 @@
-{ inputs, lib, config, pkgs, ... }: {
+{ inputs, lib, config, pkgs, systemSettings, userSettings, ... }: {
   imports = [
     ./hardware-configuration.nix
   ];
@@ -26,17 +26,17 @@
   };
 
   networking = {
-    hostName = "nixos";
+    hostName = systemSettings.hostname;
     networkmanager.enable = true;
   };
 
   users.users = {
-    ${username} = {
+    ${userSettings.username} = {
       isNormalUser = true;
-      description = "CofymDD";
+      description = userSettings.name;
       extraGroups = [ "networkmanager" "wheel" ];
     };
   };
 
-  system.stateVersion = "23.11";
+  system.stateVersion = systemSettings.system;
 }

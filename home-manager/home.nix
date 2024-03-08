@@ -1,10 +1,10 @@
-{ inputs, lib, config, pkgs, ...}: {
+{ inputs, lib, config, pkgs, systemSettings, userSettings, ... }: {
   imports = [];
 
   home = {
-    username = "${username}";
-    homeDirectory = "/home/${username}";
-    stateVersion = "23.11";
+    username = userSettings.username;
+    homeDirectory = "/home/"+userSettings.username;
+    stateVersion = systemSettings.version;
   };
 
   home.packages = with pkgs; [ nano ];
