@@ -36,5 +36,5 @@
     };
   };
 
-  system.stateVersion = systemSettings.system;
+  system.stateVersion = systemSettings.version;
 }
