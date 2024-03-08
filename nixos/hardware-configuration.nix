@@ -1,4 +1,4 @@
-{ inputs, lib, config, pkgs, systemSettings, userSettings, ... }: {
+{ inputs, systemSettings, userSettings, ... }: {
   fileSystems."/" = {
     device = "/dev/sda1";
     fsType = "ext4";

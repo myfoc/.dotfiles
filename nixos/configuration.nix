@@ -1,4 +1,4 @@
-{ inputs, lib, config, pkgs, systemSettings, userSettings, ... }: {
+{ inputs, config, pkgs, systemSettings, userSettings, ... }: {
   imports = [
     ./hardware-configuration.nix
   ];

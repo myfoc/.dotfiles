@@ -1,4 +1,4 @@
-{ inputs, lib, config, pkgs, systemSettings, userSettings, ... }: {
+{ inputs, pkgs, systemSettings, userSettings, ... }: {
   imports = [];
 
   home = {
