@@ -10,7 +10,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
   let
     systemSettings = {
       system = "aarch64-linux";
@@ -25,28 +25,29 @@
       name = "CofymDD";
       dotfilesDir = "~/.dotfiles";
     };
-    
+
     pkgs = nixpkgs.legacyPackages.${systemSettings.system};
   in {
     nixosConfigurations.${systemSettings.hostname} = nixpkgs.lib.nixosSystem {
-      specialArgs = { 
-        inherit inputs;
-        inherit systemSettings;
-        inherit userSettings;
-      };
       system = systemSettings.system;
-      modules = [ 
-        ./nixos/configuration.nix 
+      modules = [
+        ./nixos/configuration.nix
         home-manager.nixosModules.home-manager {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.${userSettings.username} = import ./home-manager/home.nix;
-          home-manager.extraSpecialArgs = { 
+          home-manager.extraSpecialArgs = {
+            inherit inputs;
             inherit systemSettings;
             inherit userSettings;
           };
         }
       ];
+      specialArgs = {
+        inherit inputs;
+        inherit systemSettings;
+        inherit userSettings;
+      };
     };
   };
 }
