@@ -51,7 +51,12 @@
     git
   ];
 
-  programs.sway.enable = true;
+  programs.sway = {
+    enable = true;
+    extraOptions = [
+      "-vga qxl"
+    ];
+  };
 
   system.stateVersion = systemSettings.version;
 }
