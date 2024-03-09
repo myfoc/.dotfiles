@@ -31,6 +31,8 @@
     networkmanager.enable = true;
   };
 
+  security.polkit.enable = true;
+
   time.timeZone = systemSettings.timezone;
   i18n.defaultLocale = systemSettings.locale;
 
