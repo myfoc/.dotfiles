@@ -48,22 +48,5 @@
     wget
   ];
 
-  services = {    
-    xserver = {
-      enable = true;
-      layout = "us";
-      displayManager = {
-        lightdm = {
-          enable = true;
-        };
-      };
-    };
-  };
-
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
   system.stateVersion = systemSettings.version;
 }
