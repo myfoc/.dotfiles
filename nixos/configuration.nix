@@ -1,22 +1,7 @@
-{ inputs, lib, config, pkgs, systemSettings, userSettings, ... }: {
+{ inputs, config, pkgs, systemSettings, userSettings, ... }: {
   imports = [
     ./hardware-configuration.nix
   ];
-
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
-    };
-  };
-
-  nix.registry = (lib.mapAttrs (_: flake: {inherit flake;})) ((lib.filterAttrs (_: lib.isType "flake")) inputs);
-  nix.nixPath = ["/etc/nix/path"];
-  environment.etc = lib.mapAttrs'(name: value: { name = "nix/path/${name}"; value.source = value.flake; })config.nix.registry;
-
-  nix.settings = {
-    experimental-features = "nix-command flakes";
-    auto-optimise-store = true;
-  };
 
   boot.loader = { 
     systemd-boot = {
@@ -26,18 +11,57 @@
     efi.canTouchEfiVariables = true;
   };
 
+  nix.settings = {
+    experimental-features = "nix-command flakes";
+    auto-optimise-store = true;
+  };
+
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+    };
+  };
+
   networking = {
     hostName = systemSettings.hostname;
     networkmanager.enable = true;
   };
+
+  time.timeZone = systemSettings.timezone;
+  i18n.defaultLocale = systemSettings.locale;
 
   services = {
     qemuGuest.enable = true;
     spice-vdagentd.enable = true;
   };
 
-  time.timeZone = systemSettings.timezone;
-  i18n.defaultLocale = systemSettings.locale;
+  hardware = {
+    opengl.enable = true;
+  };
+
+  sound.enable = true;
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
+
+  environment = {
+    sessionVariables = {
+      NIXPKGS_ALLOW_UNFREE = "1";
+      WLR_NO_HARDWARE_CURSORS = "1";
+      NIXOS_OZONE_WL = "1";
+    };
+    systemPackages = with pkgs; [
+      neofetch
+      nano
+      wget
+      git
+    ];
+  };
 
   users.users = {
     ${userSettings.username} = {
@@ -45,21 +69,6 @@
       description = userSettings.name;
       extraGroups = [ "networkmanager" "wheel" ];
     };
-  };
-
-  hardware = {
-    opengl.enable = true;
-  };
-
-  environment.systemPackages = with pkgs; [
-    nano
-    wget
-    git
-  ];
-
-  environment.sessionVariables = {
-    WLR_NO_HARDWARE_CURSORS = "1";
-    NIXOS_OZONE_WL = "1";
   };
 
   programs.hyprland = {
