@@ -14,10 +14,13 @@
 
   wayland.windowManager.sway = {
     enable = true;
+    xwayland = true;
+    extraOptions = [ "-vga qxl" ];
     config = rec {
       modifier = "Mod4";
       terminal = "foot"; 
     };
+    systemd.enable = true;
   };
 
   programs.home-manager.enable = true;
