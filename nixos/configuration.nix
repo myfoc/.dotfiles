@@ -45,11 +45,9 @@
   environment.systemPackages = with pkgs; [
     sway
     nano
-    git
     wget
+    git
   ];
-
-  # programs.sway.enable = true;
 
   system.stateVersion = systemSettings.version;
 }

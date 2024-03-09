@@ -8,27 +8,20 @@
   };
 
   home.packages = with pkgs; [
-    swayidle
-    wl-clipboard
-    mako
+    firefox
     foot
-    wofi
-    waybar
   ];
 
   wayland.windowManager.sway = {
     enable = true;
-    config = {
-      terminal = "foot";
-      menu = "wofi --show run";
-      bars = [{
-        fonts.size = 15.0;
-        position = "top";
-      }];
+    config = rec {
+      modifier = "Mod4";
+      terminal = "foot"; 
     };
   };
 
   programs.home-manager.enable = true;
+  programs.sway.enable = true;
 
   systemd.user.startServices = "sd-switch";
 }
