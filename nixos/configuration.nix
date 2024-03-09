@@ -49,5 +49,7 @@
     git
   ];
 
+  programs.sway.enable = true;
+
   system.stateVersion = systemSettings.version;
 }
