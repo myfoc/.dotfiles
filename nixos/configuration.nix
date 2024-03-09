@@ -58,9 +58,9 @@
 
   programs.sway = {
     enable = true;
-    # extraOptions = [
-    #   "-vga qxl"
-    # ];
+    extraOptions = [
+      "-vga qxl"
+    ];
   };
 
   system.stateVersion = systemSettings.version;
