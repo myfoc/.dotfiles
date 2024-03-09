@@ -39,7 +39,7 @@
       isNormalUser = true;
       description = userSettings.name;
       extraGroups = [ "networkmanager" "wheel" ];
-    }
+    };
   };
 
   environment.systemPackages = with pkgs; [
