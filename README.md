@@ -38,15 +38,9 @@ chmod +x install.sh
 ##
 <div id="header" align="center">
     <a href="https://cofymdd.com">
-        <img src="https://avatars.githubusercontent.com/u/57263672" width="100" class="rounded-image"/>
+        <img src="https://avatars.githubusercontent.com/u/57263672?v=4&h=100&w=100&fit=cover&mask=circle" width="100"/>
     </a>
     <a href="https://cofymdd.com">
         <h3>CofymDD</h3>
     </a>
 </div>
-
-<style>
-    .rounded-image {
-        border-radius: 50%;
-    }
-</style>
