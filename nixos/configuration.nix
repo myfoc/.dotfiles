@@ -41,21 +41,28 @@
     };
   };
 
-  hardware = {
-    opengl = {
-      enable = true;
-      driSupport = true;
-    };
-  };
-
   environment.systemPackages = with pkgs; [
-    sway
     nano
     git
     wget
   ];
 
-  programs.sway.enable = true;
+  services = {    
+    xserver = {
+      enable = true;
+      layout = "us";
+      displayManager = {
+        lightdm = {
+          enable = true;
+        };
+      };
+    };
+  };
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
   system.stateVersion = systemSettings.version;
 }
