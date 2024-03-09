@@ -31,8 +31,14 @@
   };
 
   time.timeZone = systemSettings.timezone;
-
   i18n.defaultLocale = systemSettings.locale;
+
+  services = {    
+    xserver = {
+      enable = true;
+      layout = "us";
+    };
+  };
 
   users.users = {
     ${userSettings.username} = {
