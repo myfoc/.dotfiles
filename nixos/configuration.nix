@@ -33,13 +33,6 @@
   time.timeZone = systemSettings.timezone;
   i18n.defaultLocale = systemSettings.locale;
 
-  services = {    
-    xserver = {
-      enable = true;
-      layout = "us";
-    };
-  };
-
   users.users = {
     ${userSettings.username} = {
       isNormalUser = true;
@@ -56,10 +49,13 @@
   };
 
   environment.systemPackages = with pkgs; [
+    sway
     nano
     git
     wget
   ];
+
+  programs.sway.enable;
 
   system.stateVersion = systemSettings.version;
 }
