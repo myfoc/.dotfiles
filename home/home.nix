@@ -10,7 +10,7 @@
   home.packages = with pkgs; [
     firefox
     foot
-    wofi
+    waybar
   ];
 
   wayland.windowManager.hyprland = {

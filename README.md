@@ -1,18 +1,46 @@
-## Install
-```
-sudo git clone https://github.com/CofymDD/.dotfiles.git ~/
-```
+<h2 align="center">CofymDD NixOS Dotfiles</h2>
+
+### Applications:
+
+|                          |             NixOS 23.11               |
+|--------------------------|:-------------------------------------:|
+| **Desktop Environment**  |   [Hyprland](https://hyprland.org)      |
+| **Display Server**       |   [Wayland](https://wayland.freedesktop.org)     |
+
+### Directory Structure
 
 ```
-sudo nixos-generate-config --show-hardware-config > ~/.dotfiles/nixos/hardware-configuration.nix
+├── home
+│  ├── programs
+│  │   └── hyprland
+│  └── home.nix
+├── nixos
+│  ├── configuration.nix
+│  └── hardware-configuration.nix
+├── flake.nix
+└── install.sh
 ```
 
-## Update
-```
-sudo git pull
+### Installation
+
+0. Clone the repo:
+```bash
+git clone https://github.com/CofymDD/.dotfiles.git ~/  | cd ~/.dotfiles
 ```
 
-## Build
+1. Run installation script:
+
+```bash
+chmod +x install.sh
+./install.sh
 ```
-sudo nixos-rebuild switch --flake .
-```
+
+##
+<div id="header" align="center">
+    <a href="https://cofymdd.com">
+        <img src="https://avatars.githubusercontent.com/u/57263672" width="100" style="border-radius: 50%;"/>
+    </a>
+    <a href="https://cofymdd.com">
+        <h3>CofymDD</h3>
+    </a>
+</div>
