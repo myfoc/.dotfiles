@@ -55,7 +55,7 @@
     wget
   ];
 
-  programs.sway.enable;
+  programs.sway.enable = true;
 
   system.stateVersion = systemSettings.version;
 }
