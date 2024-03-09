@@ -11,7 +11,7 @@
     swayidle
     wl-clipboard
     mako
-    alacritty
+    foot
     wofi
     waybar
   ];
@@ -19,17 +19,12 @@
   wayland.windowManager.sway = {
     enable = true;
     config = {
-      terminal = "alacritty";
+      terminal = "foot";
       menu = "wofi --show run";
       bars = [{
         fonts.size = 15.0;
-        position = "bottom";
+        position = "top";
       }];
-      output = {
-        eDP-1 = {
-          scale = "1";
-	      };
-	    };
     };
   };
 
