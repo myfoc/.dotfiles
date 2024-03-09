@@ -12,7 +12,11 @@
     foot
   ];
 
-  wayland.windowManager.hyprland.enable = true;
+  wayland.windowManager.hyprland = {
+    enable = true;
+    systemd.enable = true;
+  };
+
   programs.home-manager.enable = true;
 
   systemd.user.startServices = "sd-switch";
