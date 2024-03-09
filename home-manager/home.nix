@@ -16,10 +16,6 @@
     enable = true;
     settings = {
       "$mod" = "SUPER";
-
-      bindm = [
-        "$mod, Q, exec, foot"
-      ];
     };
   };
 
