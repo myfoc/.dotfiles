@@ -47,10 +47,6 @@
     };
   };
 
-  hardware = {
-    opengl.enable = true;
-  };
-
   environment.systemPackages = with pkgs; [
     nano
     wget
@@ -64,7 +60,6 @@
 
   programs.hyprland = {
     enable = true;
-    xwayland.enable = true;
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 

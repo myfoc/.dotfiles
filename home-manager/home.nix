@@ -9,15 +9,12 @@
 
   home.packages = with pkgs; [
     firefox
+    kitty
     foot
   ];
 
-  wayland.windowManager.sway = {
+  wayland.windowManager.hyprland = {
     enable = true;
-    config = rec {
-      modifier = "Mod4";
-      terminal = "foot"; 
-    };
   };
 
   programs.home-manager.enable = true;
