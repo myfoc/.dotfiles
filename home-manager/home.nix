@@ -14,7 +14,10 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    systemd.enable = true;
+    extraConfig  = ''
+      $mainMod = SUPER
+      bind = $mainMod, RETURN, exec, foot
+    '';
   };
 
   programs.home-manager.enable = true;
