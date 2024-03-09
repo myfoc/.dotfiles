@@ -1,9 +1,5 @@
 ## Install
 ```
-cd ~/
-```
-
-```
 sudo git clone https://github.com/CofymDD/.dotfiles.git ~/
 ```
 

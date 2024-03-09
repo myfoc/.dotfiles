@@ -39,14 +39,17 @@
       isNormalUser = true;
       description = userSettings.name;
       extraGroups = [ "networkmanager" "wheel" ];
-    };
+    }
   };
 
   environment.systemPackages = with pkgs; [
+    sway
     nano
     git
     wget
   ];
+
+  programs.sway.enable = true;
 
   system.stateVersion = systemSettings.version;
 }
