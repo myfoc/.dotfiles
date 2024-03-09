@@ -33,6 +33,11 @@
 
   security.polkit.enable = true;
 
+  services = {
+    qemuGuest.enable = true;
+    spice-vdagentd.enable = true;
+  };
+
   time.timeZone = systemSettings.timezone;
   i18n.defaultLocale = systemSettings.locale;
 
@@ -53,9 +58,9 @@
 
   programs.sway = {
     enable = true;
-    extraOptions = [
-      "-vga qxl"
-    ];
+    # extraOptions = [
+    #   "-vga qxl"
+    # ];
   };
 
   system.stateVersion = systemSettings.version;
