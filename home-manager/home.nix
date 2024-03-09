@@ -21,7 +21,6 @@
   };
 
   programs.home-manager.enable = true;
-  programs.sway.enable = true;
 
   systemd.user.startServices = "sd-switch";
 }
