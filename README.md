@@ -38,7 +38,7 @@ chmod +x install.sh
 ##
 <div id="header" align="center">
     <a href="https://cofymdd.com">
-        <img src="https://avatars.githubusercontent.com/u/57263672?v=4&h=100&w=100&fit=cover&mask=circle" width="100"/>
+        <img src="https://imgur.com/a/Q5F2GMz" width="100"/>
     </a>
     <a href="https://cofymdd.com">
         <h3>CofymDD</h3>
