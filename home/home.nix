@@ -11,8 +11,8 @@
 
   home.packages = with pkgs; [
     firefox
-    alacritty
     waybar
+    foot
     rofi
   ];
 

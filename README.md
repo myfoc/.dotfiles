@@ -5,6 +5,7 @@
 |                          |             NixOS 23.11               |
 |--------------------------|:-------------------------------------:|
 | **Desktop Environment**  |   [Hyprland](https://hyprland.org)      |
+| **Terminal Emulator**    |   [Foot](https://codeberg.org/dnkl/foot) |
 | **Display Server**       |   [Wayland](https://wayland.freedesktop.org)     |
 
 ### Directory Structure
@@ -12,6 +13,7 @@
 ```
 ├── home
 │  ├── programs
+│  │   ├── foot
 │  │   └── hyprland
 │  └── home.nix
 ├── nixos

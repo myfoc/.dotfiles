@@ -7,7 +7,7 @@
     extraConfig  = ''
       monitor=,preferred,auto,auto
 
-      $terminal = alacritty
+      $terminal = foot
       $menu = rofiWindow
 
       env = XCURSOR_SIZE,24
