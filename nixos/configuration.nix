@@ -31,8 +31,6 @@
     networkmanager.enable = true;
   };
 
-  security.polkit.enable = true;
-
   services = {
     qemuGuest.enable = true;
     spice-vdagentd.enable = true;
@@ -49,18 +47,25 @@
     };
   };
 
+  hardware = {
+    opengl.enable = true;
+  };
+
   environment.systemPackages = with pkgs; [
-    sway
     nano
     wget
     git
   ];
 
-  programs.sway = {
+  environment.sessionVariables = {
+    WLR_NO_HARDWARE_CURSORS = "1";
+    NIXOS_OZONE_WL = "1";
+  };
+
+  programs.hyprland = {
     enable = true;
-    extraOptions = [
-      "-vga qxl"
-    ];
+    xwayland.enable = true;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
   system.stateVersion = systemSettings.version;
