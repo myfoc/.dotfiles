@@ -13,7 +13,6 @@
     firefox
     waybar
     foot
-    rofi
   ];
 
   programs.home-manager.enable = true;
