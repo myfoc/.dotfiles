@@ -6,7 +6,7 @@
       monitor=,preferred,auto,auto
 
       $terminal = foot
-      $menu = rofiWindow
+      $menu = rofi -show drun
 
       env = XCURSOR_SIZE,24
       env = QT_QPA_PLATFORMTHEME,qt5ct
