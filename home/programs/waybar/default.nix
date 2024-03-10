@@ -1,13 +1,8 @@
 { config, lib, pkgs, ... }:
-
 {
-    programs.waybar = {
-      enable = true;
-      systemd = {
-        enable = false;
-        target = "graphical-session.target";
-      };
-      style = ''
+  programs.waybar = {
+    enable = true;
+    style = ''
                * {
                  font-family: "JetBrainsMono Nerd Font";
                  font-size: 12pt;

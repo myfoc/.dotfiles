@@ -8,6 +8,8 @@
       $terminal = foot
       $menu = rofi -show drun
 
+      exec = pkill waybar & sleep 0.5 && waybar
+
       env = XCURSOR_SIZE,24
       env = QT_QPA_PLATFORMTHEME,qt5ct
 
