@@ -1,14 +1,13 @@
 { config, lib, pkgs, ... }: {
   programs.waybar = {
     enable = true;
+    systemd = {
+      enable = false;
+      target = "graphical-session.target";
+    };
     settings = {
-      position = "bottom";
-      layer = "top";
-      height = 5;
-      margin-top = 0;
-      margin-bottom = 0;
-      margin-left = 0;
-      margin-right = 0;
+      "layer" = "top";
+      "position" = "top";
       modules-left = [
         "custom/launcher" 
         "hyprland/workspaces"
