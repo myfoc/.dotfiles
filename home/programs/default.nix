@@ -2,5 +2,6 @@
   imports = [
     ./hyprland
     ./rofi
+    ./waybar
   ];
 }
