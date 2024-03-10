@@ -3,6 +3,10 @@ set -e
 
 cd ~/.dotfiles
 
+sudo git reset --hard HEAD
+
+sudo git pull
+
 sudo rm -f ~/.dotfiles/nixos/hardware-configuration.nix
 
 sudo nixos-generate-config --show-hardware-config > ~/.dotfiles/nixos/hardware-configuration.nix
