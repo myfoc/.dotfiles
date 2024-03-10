@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
   programs.rofi = {
     enable = true;
-    theme = ./theme.rasi;
+    # theme = ./theme.rasi;
   };
 
   home.file.".config/rofi/theme.rasi".text = ''
