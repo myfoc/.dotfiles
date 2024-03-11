@@ -13,6 +13,8 @@
   home.packages = with pkgs; [
     nerdfonts
     firefox
+    alacritty
+    kitty
   ];
 
   programs.home-manager.enable = true;
