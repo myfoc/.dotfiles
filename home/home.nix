@@ -12,7 +12,6 @@
   home.packages = with pkgs; [
     nerdfonts
     firefox
-    foot
   ];
 
   programs.home-manager.enable = true;
