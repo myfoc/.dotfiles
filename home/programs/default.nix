@@ -3,6 +3,7 @@
     ./foot
     ./hyprland
     ./rofi
+    ./swww
     ./waybar
   ];
 }
