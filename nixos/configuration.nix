@@ -30,6 +30,18 @@
   time.timeZone = systemSettings.timezone;
   i18n.defaultLocale = systemSettings.locale;
 
+  virtualisation = {
+    libvirtd = {
+      enable = true;
+      qemu = {
+        swtpm.enable = true;
+        ovmf.enable = true;
+        ovmf.packages = [ pkgs.OVMFFull.fd ];
+      };
+    };
+    spiceUSBRedirection.enable = true;
+  };
+
   services = {
     qemuGuest.enable = true;
     spice-vdagentd.enable = true;
@@ -56,6 +68,12 @@
       NIXOS_OZONE_WL = "1";
     };
     systemPackages = with pkgs; [
+      virt-manager
+      virt-viewer
+      spice spice-gtk
+      spice-protocol
+      win-virtio
+      win-spice
       neofetch
       nano
       wget
@@ -67,7 +85,7 @@
     ${userSettings.username} = {
       isNormalUser = true;
       description = userSettings.name;
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     };
   };
 
