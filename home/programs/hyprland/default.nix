@@ -1,6 +1,9 @@
 { config, lib, pkgs, ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
+    extraConfig  = ''
+# Dotfiles by CofymDD
+    '';
   };
 
   home.file.".config/hypr" = {
