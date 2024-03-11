@@ -1,0 +1,93 @@
+[
+  {
+    "clock": {
+      "format": " {:%H:%M}",
+      "format-alt": " {:%d/%m}",
+      "tooltip": "true",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+      "format": "  {usage}%",
+      "format-alt": "  {avg_frequency} GHz",
+      "interval": 2
+    },
+    "custom/launcher": {
+      "format": "",
+      "on-click": "pkill wofi || wofi --show drun",
+      "on-click-right": "pkill wofi || wallpaper-picker",
+      "tooltip": "false"
+    },
+    "disk": {
+      "format": "󰋊 {percentage_used}%",
+      "interval": 60
+    },
+    "hyprland/workspaces": {
+      "active-only": false,
+      "disable-scroll": true,
+      "format": "{icon}",
+      "format-icons": {
+        "1": "󰈹",
+        "2": "",
+        "3": "󰘙",
+        "4": "󰙯",
+        "5": "",
+        "6": "",
+        "default": "",
+        "sort-by-number": true,
+        "urgent": ""
+      },
+      "on-click": "activate",
+      "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      }
+    },
+    "layer": "top",
+    "memory": {
+      "format": "󰟜 {}%",
+      "format-alt": "󰟜 {used} GiB",
+      "interval": 2
+    },
+    "modules-center": [
+      "clock"
+    ],
+    "modules-left": [
+      "custom/launcher",
+      "hyprland/workspaces"
+    ],
+    "modules-right": [
+      "tray",
+      "cpu",
+      "memory",
+      "disk",
+      "pulseaudio",
+      "network"
+    ],
+    "network": {
+      "format-disconnected": "󰖪 ",
+      "format-ethernet": "󰀂 ",
+      "format-linked": "{ifname} (No IP)",
+      "format-wifi": "  {signalStrength}%",
+      "tooltip-format": "Connected to {essid} {ifname} via {gwaddr}"
+    },
+    "position": "top",
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-icons": {
+        "default": [
+          " "
+        ]
+      },
+      "format-muted": "󰖁 ",
+      "on-click": "pamixer -t",
+      "scroll-step": 5
+    },
+    "tray": {
+      "icon-size": 20,
+      "spacing": 8
+    }
+  }
+]
