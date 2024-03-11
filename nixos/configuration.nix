@@ -57,6 +57,7 @@
     };
     systemPackages = with pkgs; [
       neofetch
+      swww
       nano
       wget
       git
