@@ -1,6 +1,11 @@
 { config, pkgs, ... }: {
   programs.rofi = {
     enable = true;
-    theme = ./theme.rasi;
+  };
+
+  home.file.".config/rofi" = {
+    recursive = true;
+    source = ./config;
+    target = ".config/rofi";
   };
 }
