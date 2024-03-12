@@ -1,25 +1,21 @@
 #!/bin/sh
 set -e
 
-sudo su
-
 cd ~/.dotfiles
 
-git reset --hard HEAD
+sudo git reset --hard HEAD
 
-git pull
+sudo git pull
 
-chmod +x install.sh
+sudo chmod +x install.sh
 
-rm -f ~/.dotfiles/nixos/hardware-configuration.nix
+sudo rm -f ~/.dotfiles/nixos/hardware-configuration.nix
 
-nixos-generate-config --show-hardware-config > ~/.dotfiles/nixos/hardware-configuration.nix
+sudo nixos-generate-config --show-hardware-config > ~/.dotfiles/nixos/hardware-configuration.nix
 
-nixos-rebuild switch --flake .#nixos --show-trace
-
-exit
+sudo nixos-rebuild switch --flake .#nixos --show-trace
 
 echo "Rebooting in 5 seconds."
 sleep 5
 
-reboot now
+sudo reboot now
