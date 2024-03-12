@@ -66,7 +66,9 @@
       NIXPKGS_ALLOW_UNFREE = "1";
       WLR_NO_HARDWARE_CURSORS = "1";
       NIXOS_OZONE_WL = "1";
+      LIBGL_ALWAYS_SOFTWARE= "1";
     };
+    
     systemPackages = with pkgs; [
       virt-manager
       virt-viewer
