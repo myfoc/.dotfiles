@@ -3,9 +3,9 @@
     enable = true; 
   };
 
-  # home.file.".config/alacritty" = {
-  #   recursive = true;
-  #   source = ./config;
-  #   target = ".config/alacritty";
-  # };
+  home.file.".config/alacritty" = {
+    recursive = true;
+    source = ./config;
+    target = ".config/alacritty";
+  };
 }
