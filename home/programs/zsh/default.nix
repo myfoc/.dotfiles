@@ -8,6 +8,8 @@
     };
   };
 
+  users.defaultUserShell = pkgs.zsh;
+
   # home.file.".config/foot" = {
   #   recursive = true;
   #   source = ./config;
