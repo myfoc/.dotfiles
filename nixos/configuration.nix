@@ -87,6 +87,7 @@
       isNormalUser = true;
       description = userSettings.name;
       extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+      shell = pkgs.zsh;
     };
   };
 
