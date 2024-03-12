@@ -2,11 +2,6 @@
   programs = {
     zsh = {
       enable = true;
-      oh-my-zsh = {
-        enable = true;
-        theme = "refined";
-        plugins = [];
-      };
       enableAutosuggestions = true;
       enableCompletion = true;
       enableSyntaxHighlighting = true;
