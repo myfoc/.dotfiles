@@ -14,7 +14,6 @@
     nerdfonts
     firefox
     alacritty
-    kitty
   ];
 
   programs.home-manager.enable = true;
