@@ -1,5 +1,5 @@
 { config, pkgs, ... }: {
-  programs.rofi-wayland = {
+  programs.rofi = {
     enable = true;
   };
 
