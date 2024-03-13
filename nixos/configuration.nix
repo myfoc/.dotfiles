@@ -56,10 +56,12 @@
       nano
       wget
       git
+      zsh
     ];
   };
 
   users.users = {
+    defaultUserShell = pkgs.zsh;
     ${userSettings.username} = {
       isNormalUser = true;
       description = userSettings.name;
