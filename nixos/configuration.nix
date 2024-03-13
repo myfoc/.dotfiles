@@ -62,13 +62,13 @@
   users.users = {
     ${userSettings.username} = {
       isNormalUser = true;
-      shell = pkgs.fish;
+      shell = pkgs.zsh;
       description = userSettings.name;
       extraGroups = [ "networkmanager" "wheel" ];
     };
   };
 
-  programs.fish.enable = true;
+  programs.zsh.enable = true;
 
   programs.hyprland = {
     enable = true;

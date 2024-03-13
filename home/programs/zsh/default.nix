@@ -1,11 +1,11 @@
 { config, lib, pkgs, ... }: {
-  programs.fish = {
+  programs.zsh = {
     enable = true; 
   };
 
-  # home.file.".config/fish" = {
+  # home.file.".config/" = {
   #   recursive = true;
   #   source = ./config;
-  #   target = ".config/fish";
+  #   target = ".config/";
   # };
 }

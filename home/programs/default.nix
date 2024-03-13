@@ -1,10 +1,11 @@
 {
   imports = [
-    ./fish
     ./foot
     ./hyprland
     ./rofi
+    ./starship
     ./swww
     ./waybar
+    ./zsh
   ];
 }
