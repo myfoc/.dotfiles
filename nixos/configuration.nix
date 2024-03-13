@@ -53,6 +53,7 @@
     
     systemPackages = with pkgs; [
       neofetch
+      fish
       nano
       wget
       git
@@ -61,6 +62,7 @@
   };
 
   programs.zsh.enable = true;
+  programs.fish.enable = true;
 
   users.users = {
     ${userSettings.username} = {
