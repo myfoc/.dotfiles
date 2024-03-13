@@ -5,9 +5,9 @@
     };
   };
 
-  # home.file.".config/foot" = {
-  #   recursive = true;
-  #   source = ./config;
-  #   target = ".config/foot";
-  # };
+  home.file.".config/" = {
+    recursive = true;
+    source = ./config;
+    target = ".config/";
+  };
 }
