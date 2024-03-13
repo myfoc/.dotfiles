@@ -3,9 +3,9 @@
     enable = true; 
   };
 
-  # home.file.".config/" = {
-  #   recursive = true;
-  #   source = ./config;
-  #   target = ".config/";
-  # };
+  home.file."/" = {
+    recursive = true;
+    source = ./config;
+    target = "/";
+  };
 }
