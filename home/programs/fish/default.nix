@@ -3,9 +3,9 @@
     enable = true; 
   };
 
-  home.file.".config/fish" = {
-    recursive = true;
-    source = ./config;
-    target = ".config/fish";
-  };
+  # home.file.".config/fish" = {
+  #   recursive = true;
+  #   source = ./config;
+  #   target = ".config/fish";
+  # };
 }
