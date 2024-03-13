@@ -56,20 +56,19 @@
       nano
       wget
       git
-      zsh
     ];
   };
-
-  programs.zsh.enable = true;
 
   users.users = {
     ${userSettings.username} = {
       isNormalUser = true;
-      shell = pkgs.zsh;
+      shell = pkgs.fish;
       description = userSettings.name;
       extraGroups = [ "networkmanager" "wheel" ];
     };
   };
+
+  programs.fish.enable = true;
 
   programs.hyprland = {
     enable = true;
