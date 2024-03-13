@@ -60,10 +60,12 @@
     ];
   };
 
+  programs.zsh.enable = true;
+
   users.users = {
-    defaultUserShell = pkgs.zsh;
     ${userSettings.username} = {
       isNormalUser = true;
+      shell = pkgs.zsh;
       description = userSettings.name;
       extraGroups = [ "networkmanager" "wheel" ];
     };
