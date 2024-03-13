@@ -6,6 +6,6 @@
     ./rofi
     ./swww
     ./waybar
-    # ./zsh
+    ./zsh
   ];
 }
