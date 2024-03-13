@@ -11,7 +11,6 @@
   };
 
   home.packages = with pkgs; [
-    alacritty
     nerdfonts
     firefox
   ];
