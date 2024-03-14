@@ -27,8 +27,7 @@
       }
     },
     "clock": {
-      "format": " {:%H:%M}",
-      "format-alt": " {:%d/%m}",
+      "format": " {:%I:%M:%S %p}  {:%d/%m}",
       "tooltip": false
     },
     "cpu": {
