@@ -29,19 +29,21 @@
     "clock": {
       "format": " {:%H:%M}",
       "format-alt": " {:%d/%m}",
-      "tooltip": "true",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+      "tooltip": "false"
     },
     "cpu": {
-      "format": "  {usage}%",
+      "format": " {usage}%",
+      "tooltip": "false",
       "interval": 2
     },
     "memory": {
       "format": "󰟜 {}%",
+      "tooltip": "false",
       "interval": 2
     },
     "disk": {
       "format": "󰋊 {percentage_used}%",
+      "tooltip": "false",
       "interval": 60
     },
 
