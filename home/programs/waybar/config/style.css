@@ -10,7 +10,7 @@
 }
 
 window#waybar {
-  background: #db4740ff;
+  background: #db4740;
 }
 
 #workspaces {
@@ -28,7 +28,7 @@ window#waybar {
 
 #workspaces button.active {
   color: #333333;
-  background: #db4740ff;
+  background: #db4740;
 }
 
 #cpu, #memory, #disk, #clock {
