@@ -27,13 +27,20 @@
 
 0. Clone the repo:
 ```bash
-git clone https://github.com/CofymDD/.dotfiles.git ~/  | cd ~/.dotfiles
+git clone https://github.com/CofymDD/.dotfiles.git ~/
 ```
 
 1. Run installation script:
 
 ```bash
+cd ~/.dotfiles
+```
+
+```bash
 chmod +x install.sh
+```
+
+```bash
 ./install.sh
 ```
 
