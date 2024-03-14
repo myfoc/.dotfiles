@@ -6,14 +6,13 @@
     "hyprland/workspaces": {
       "active-only": false,
       "disable-scroll": true,
-      "justify": "center",
       "format": "{icon}",
       "format-icons": {
-        "1": "󰈹",
-        "2": "",
-        "3": "󰘙",
-        "4": "󰙯",
-        "5": "",
+        "1": "1",
+        "2": "2",
+        "3": "",
+        "4": "4",
+        "5": "5",
         "default": "",
         "sort-by-number": true,
         "urgent": ""
@@ -29,22 +28,18 @@
     },
     "clock": {
       "format": " {:%I:%M:%S %p}  {:%d/%m}",
-      "justify": "center",
       "tooltip": false
     },
     "cpu": {
       "format": " {usage}%",
-      "justify": "center",
       "tooltip": false
     },
     "memory": {
       "format": "󰟜 {}%",
-      "justify": "center",
       "tooltip": false
     },
     "disk": {
       "format": "󰋊 {percentage_used}%",
-      "justify": "center",
       "tooltip": false,
       "interval": 60
     },
