@@ -33,13 +33,11 @@
     },
     "cpu": {
       "format": " {usage}%",
-      "tooltip": "false",
-      "interval": 2
+      "tooltip": "false"
     },
     "memory": {
       "format": "󰟜 {}%",
-      "tooltip": "false",
-      "interval": 2
+      "tooltip": "false"
     },
     "disk": {
       "format": "󰋊 {percentage_used}%",
