@@ -41,15 +41,15 @@
       "separate-outputs": true
     },
     "cpu": {
-      "format": "  {usage}%",
+      "format": "󰍛  {usage}%",
       "tooltip": false
     },
     "memory": {
-      "format": "󰟜 {}%",
+      "format": "  {}%",
       "tooltip": false
     },
     "disk": {
-      "format": "󰋊 {percentage_used}%",
+      "format": "󰋊  {percentage_used}%",
       "tooltip": false,
       "interval": 60
     },
