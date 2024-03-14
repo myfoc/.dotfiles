@@ -5,6 +5,7 @@
   margin: 0;
   min-height: 0px;
   font-family: JetBrainsMono Nerd Font;
+  font-size: 12px;
   opacity: 1.0;
 }
 
@@ -12,19 +13,18 @@ window#waybar {
   background: #db4740;
 }
 
-.modules-left, .modules-center, .modules-right {
+.modules-left, .modules-right {
   background-color: #333333;
 }
 
-#cpu, #memory, #disk, #clock {
+#window, #cpu, #memory, #disk, #clock {
   color: #ffffff;
-  font-size: 12px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-#workspaces {
-  font-size: 12px;
+#window {
+  background-color: transparent;
 }
 
 #workspaces button {

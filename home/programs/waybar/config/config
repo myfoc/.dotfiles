@@ -36,6 +36,10 @@
         "10": []
       }
     },
+    "hyprland/window": {
+      "format": "{title}",
+      "separate-outputs": true
+    },
     "cpu": {
       "format": " {usage}%",
       "tooltip": false
@@ -56,7 +60,8 @@
     },
 
     "modules-left": [
-      "hyprland/workspaces"
+      "hyprland/workspaces",
+      "hyprland/window"
     ],
     "modules-right": [
       "cpu",
