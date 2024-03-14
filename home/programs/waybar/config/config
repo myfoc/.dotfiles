@@ -29,19 +29,19 @@
     "clock": {
       "format": " {:%H:%M}",
       "format-alt": " {:%d/%m}",
-      "tooltip": "false"
+      "tooltip": false
     },
     "cpu": {
       "format": " {usage}%",
-      "tooltip": "false"
+      "tooltip": false
     },
     "memory": {
       "format": "󰟜 {}%",
-      "tooltip": "false"
+      "tooltip": false
     },
     "disk": {
       "format": "󰋊 {percentage_used}%",
-      "tooltip": "false",
+      "tooltip": false,
       "interval": 60
     },
 
