@@ -41,7 +41,7 @@
       "separate-outputs": true
     },
     "cpu": {
-      "format": " {usage}%",
+      "format": "  {usage}%",
       "tooltip": false
     },
     "memory": {
@@ -54,7 +54,7 @@
       "interval": 60
     },
     "clock": {
-      "format": " {:%I:%M:%S %p}",
+      "format": " {:%a %b %e  %I:%M:%S %p}",
       "tooltip": false,
       "interval": 1
     },
