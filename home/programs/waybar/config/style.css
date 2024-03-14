@@ -24,6 +24,7 @@ window#waybar {
 }
 
 #window {
+  color: #333333;
   background: #db4740;
 }
 
