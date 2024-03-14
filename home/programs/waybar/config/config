@@ -23,7 +23,7 @@
       }
     },
     "clock": {
-      "format": " {:%I:%M:%S %p}  {:%d/%m}",
+      "format": " {:%h:%M:%S %p}  {:%d/%m}",
       "tooltip": false
     },
     "cpu": {

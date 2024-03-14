@@ -14,9 +14,7 @@ window#waybar {
 }
 
 #workspaces {
-  font-size: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 10px;
 }
 
 #workspaces button {
@@ -34,7 +32,7 @@ window#waybar {
 #cpu, #memory, #disk, #clock {
   color: #ffffff;
   background: #333333;
-  font-size: 15px;
+  font-size: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
