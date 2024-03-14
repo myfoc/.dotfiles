@@ -22,10 +22,6 @@
         "5": []
       }
     },
-    "clock": {
-      "format": " {:%h:%M:%S %p}  {:%d/%m}",
-      "tooltip": false
-    },
     "cpu": {
       "format": " {usage}%",
       "tooltip": false
@@ -39,17 +35,19 @@
       "tooltip": false,
       "interval": 60
     },
+    "clock": {
+      "format": " {:%H:%M:%S}  {:%D:%M}",
+      "tooltip": false
+    },
 
     "modules-left": [
       "hyprland/workspaces"
     ],
-    "modules-center": [
-      "clock"
-    ],
     "modules-right": [
       "cpu",
       "memory",
-      "disk"
+      "disk",
+      "clock"
     ]
   }
 ]
