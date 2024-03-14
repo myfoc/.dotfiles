@@ -6,6 +6,7 @@
     "hyprland/workspaces": {
       "active-only": false,
       "disable-scroll": true,
+      "justify": "center",
       "format": "{icon}",
       "format-icons": {
         "1": "󰈹",
@@ -28,18 +29,22 @@
     },
     "clock": {
       "format": " {:%I:%M:%S %p}  {:%d/%m}",
+      "justify": "center",
       "tooltip": false
     },
     "cpu": {
       "format": " {usage}%",
+      "justify": "center",
       "tooltip": false
     },
     "memory": {
       "format": "󰟜 {}%",
+      "justify": "center",
       "tooltip": false
     },
     "disk": {
       "format": "󰋊 {percentage_used}%",
+      "justify": "center",
       "tooltip": false,
       "interval": 60
     },

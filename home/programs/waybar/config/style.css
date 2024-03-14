@@ -34,7 +34,6 @@ window#waybar {
 }
 
 #cpu, #memory, #disk, #clock {
-  justify-content: center;
   font-size: 15px;
   padding-left: 10px;
   padding-right: 10px;
