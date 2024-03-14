@@ -18,4 +18,4 @@ sudo nixos-rebuild switch --flake .#nixos --show-trace
 echo "Rebooting in 5 seconds."
 sleep 5
 
-reboot now
+sudo reboot now

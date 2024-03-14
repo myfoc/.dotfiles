@@ -8,18 +8,18 @@
       "disable-scroll": true,
       "format": "{icon}",
       "format-icons": {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "",
-        "6": "",
-        "7": "",
-        "8": "",
-        "9": "",
-        "10": "",
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " ",
+        "6": " ",
+        "7": " ",
+        "8": " ",
+        "9": " ",
+        "10": " ",
         "sort-by-number": true,
-        "default": "",
+        "default": " ",
         "urgent": " "
       },
       "on-click": "activate",
@@ -53,12 +53,16 @@
       "tooltip": false,
       "interval": 60
     },
+    "battery": {
+      "format": " {capacity}%",
+      "tooltip": false
+    },
     "clock#date": {
-      "format": " {:%a %b %e}",
+      "format": "  {:%a %d/%m/%y}",
       "tooltip": false
     },
     "clock#time": {
-      "format": " {:%I:%M:%S %p}",
+      "format": "  {:%I:%M:%S %p}",
       "tooltip": false,
       "interval": 1
     },
@@ -71,6 +75,7 @@
       "cpu",
       "memory",
       "disk",
+      "battery",
       "clock#date",
       "clock#time"
     ]
