@@ -17,7 +17,7 @@ window#waybar {
   background: #333333;
 }
 
-#window, #cpu, #memory, #disk, #clock#time, clock#date {
+#window, #cpu, #memory, #disk, #clock {
   color: #ffffff;
   padding-left: 10px;
   padding-right: 10px;
@@ -32,11 +32,9 @@ window#waybar {
   color: #ffffff;
   padding-left:  5px;
   padding-right: 5px;
-  border-bottom: 2px solid transparent;
 }
 
 #workspaces button.active {
   color: #333333;
   background: #db4740;
-  border-bottom: 2px solid #333333;
 }
