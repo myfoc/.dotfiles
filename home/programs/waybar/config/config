@@ -54,7 +54,9 @@
       "interval": 60
     },
     "hyprland/language": {
-      "format": "  {}"
+      "format": "  {}",
+      "format-en": "English",
+      "format-ru": "Russian"
     },
     "clock#date": {
       "format": "  {:%a %d/%m/%y}",
