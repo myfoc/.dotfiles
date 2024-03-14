@@ -9,17 +9,18 @@
       "format": "{icon}",
       "format-icons": {
         "1": " ",
-        "2": " ",
-        "3": "",
-        "4": " ",
-        "5": " ",
-        "6": " ",
-        "7": " ",
-        "8": " ",
-        "9": " ",
-        "10": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " ",
+        "6": " ",
+        "7": " ",
+        "8": " ",
+        "9": " ",
+        "10": " ",
         "sort-by-number": true,
-        "urgent": ""
+        "default": " ",
+        "urgent": " "
       },
       "on-click": "activate",
       "persistent-workspaces": {
@@ -49,7 +50,7 @@
       "interval": 60
     },
     "clock": {
-      "format": " {:%H:%M:%S}  {:%D:%M}",
+      "format": " {:%I:%M:%S %p}",
       "tooltip": false
     },
 
