@@ -14,7 +14,7 @@ window#waybar {
 }
 
 .modules-left, .modules-right {
-  background-color: #333333;
+  background: #333333;
 }
 
 #window, #cpu, #memory, #disk, #clock {
@@ -24,7 +24,7 @@ window#waybar {
 }
 
 #window {
-  background-color: transparent;
+  background: #db4740;
 }
 
 #workspaces button {
