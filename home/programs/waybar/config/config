@@ -8,11 +8,7 @@
       "disable-scroll": true,
       "format": "{icon}",
       "format-icons": {
-        "1": "1",
-        "2": "2",
-        "3": "",
-        "4": "4",
-        "5": "5",
+        "1": " ",
         "default": "",
         "sort-by-number": true,
         "urgent": ""

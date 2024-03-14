@@ -20,22 +20,23 @@ window#waybar {
 }
 
 #workspaces button {
-  color: #ff0000;
+  color: #ffffff;
   padding-left:  8px;
   padding-right: 8px;
 }
 
 #workspaces button.empty {
-  color: #26ff00;
+  color: #808080;
 }
 
 #workspaces button.active {
-  color: #0022ff;
+  color: #ffffff;
+  background: #333333;
 }
 
 #cpu, #memory, #disk, #clock {
+  color: #ffffff;
   font-size: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  color: #ffffff;
 }
