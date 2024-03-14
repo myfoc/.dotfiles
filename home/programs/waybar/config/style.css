@@ -10,7 +10,7 @@
 }
 
 window#waybar {
-  background: black;
+  background: #db4740ff;
 }
 
 #workspaces {
@@ -21,21 +21,19 @@ window#waybar {
 
 #workspaces button {
   color: #ffffff;
+  background: #333333;
   padding-left:  8px;
   padding-right: 8px;
 }
 
-#workspaces button.empty {
-  color: #808080;
-}
-
 #workspaces button.active {
-  color: #ffffff;
-  background: #333333;
+  color: #333333;
+  background: #db4740ff;
 }
 
 #cpu, #memory, #disk, #clock {
   color: #ffffff;
+  background: #333333;
   font-size: 15px;
   padding-left: 10px;
   padding-right: 10px;
