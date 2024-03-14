@@ -14,15 +14,16 @@ window#waybar {
 }
 
 #workspaces {
+  text-align: center;
   font-size: 18px;
-  padding-left: 7.5px;
-  padding-right: 7.5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #workspaces button {
   color: #ff0000;
-  padding-left:  6px;
-  padding-right: 6px;
+  padding-left:  8px;
+  padding-right: 8px;
 }
 
 #workspaces button.empty {
@@ -34,26 +35,9 @@ window#waybar {
 }
 
 #cpu, #memory, #disk, #clock {
+  text-align: center;
   font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #ffffff;
-}
-
-#cpu {
-  padding-left: 9px;
-  padding-right: 9px;
-}
-
-#memory {
-  padding-left: 9px;
-  padding-right: 9px;
-}
-
-#disk {
-  padding-left: 9px;
-  padding-right: 9px;
-}
-    
-#clock {
-  padding-left: 9px;
-  padding-right: 9px;
 }
