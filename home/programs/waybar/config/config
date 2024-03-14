@@ -53,16 +53,15 @@
       "tooltip": false,
       "interval": 60
     },
-    "battery": {
-      "format": " {capacity}%",
-      "tooltip": false
+    "hyprland/language": {
+      "format": "  {}"
     },
     "clock#date": {
       "format": "  {:%a %d/%m/%y}",
       "tooltip": false
     },
     "clock#time": {
-      "format": "  {:%I:%M:%S %p}",
+      "format": "  {:%I:%M:%S %p}",
       "tooltip": false,
       "interval": 1
     },
@@ -75,7 +74,7 @@
       "cpu",
       "memory",
       "disk",
-      "battery",
+      "hyprland/language",
       "clock#date",
       "clock#time"
     ]
