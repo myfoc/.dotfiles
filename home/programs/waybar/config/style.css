@@ -14,7 +14,6 @@ window#waybar {
 }
 
 #workspaces {
-  text-align: center;
   font-size: 18px;
   padding-left: 10px;
   padding-right: 10px;
@@ -35,7 +34,7 @@ window#waybar {
 }
 
 #cpu, #memory, #disk, #clock {
-  text-align: center;
+  justify-content: center;
   font-size: 15px;
   padding-left: 10px;
   padding-right: 10px;
