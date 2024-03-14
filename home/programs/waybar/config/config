@@ -50,8 +50,9 @@
       "interval": 60
     },
     "clock": {
-      "format": " {:%I:%M:%S %p}",
-      "tooltip": false
+      "format": " {:%I:%M:%S %p}",
+      "tooltip": false,
+      "interval": 1
     },
 
     "modules-left": [

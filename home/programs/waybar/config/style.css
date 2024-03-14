@@ -13,9 +13,12 @@ window#waybar {
   background: #db4740;
 }
 
+.modules-left, .modules-center, .modules-right {
+  background-color: #16161e;
+}
+
 #cpu, #memory, #disk, #clock {
   color: #ffffff;
-  background: #333333;
   font-size: 12px;
   padding-left: 10px;
   padding-right: 10px;
@@ -27,7 +30,6 @@ window#waybar {
 
 #workspaces button {
   color: #ffffff;
-  background: #333333;
   padding-left:  5px;
   padding-right: 5px;
 }
