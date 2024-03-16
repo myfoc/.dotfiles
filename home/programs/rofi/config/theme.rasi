@@ -1,40 +1,11 @@
-window {
-    location: center;
-    height: 300px;
-    width: 600px;
-    border:             2px;
-    border-radius:      2px;    
-    background-color:   rgba(20,20,20,1.0);
-    border-color:       rgba(255, 255, 255, 1);
-
-}
-
-element normal active {
-    color: rgba(255, 255, 255, 1.0);
-}
-
-element selected normal,
-element selected active {
-    background-color: transparent;
-    text-color: rgba(255, 255, 255, 0.5);
-}
-
-element-icon {
-    size: 35px;
-    vertical-align: 1;
-}
-
-mainbox {
-    padding:            5px;
-}
-
-element-text {
-    color: inherit;
-}
-
 * {
-    background-color: transparent;
-    color: rgba(255, 255, 255, 1.0);
-    margin: 0;
-    padding: 0;
+    bg-col:  #1E1D2F;
+    bg-col-light: #1E1D2F;
+    border-col: #1E1D2F;
+    selected-col: #1E1D2F;
+    blue: #7aa2f7;
+    fg-col: #D9E0EE;
+    fg-col2: #F28FAD;
+    grey: #D9E0EE;
+    width: 600;
 }
