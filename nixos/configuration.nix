@@ -52,6 +52,7 @@
     };
     
     systemPackages = with pkgs; [
+      gpg
       pass
       nano
       wget
