@@ -49,8 +49,8 @@ window#waybar {
 #workspaces button.active {
   color: #333333;
   background: #db4740;
-  background-image: linear-gradient(to bottom, transparent, transparent calc(75% - 1px), #333333 calc(75% - 1px), #333333 calc(75% + 1px), transparent calc(75% + 1px), transparent);
+  background-image: linear-gradient(to bottom, transparent, transparent calc(85% - 1px), #333333 calc(85% - 1px), #333333 calc(85% + 1px), transparent calc(85% + 1px), transparent);
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 75% 2px;
+  background-size: 85% 1px;
 }
