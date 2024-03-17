@@ -52,6 +52,7 @@
     };
     
     systemPackages = with pkgs; [
+      keepass
       nano
       wget
       git
