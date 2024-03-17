@@ -14,11 +14,11 @@ window#waybar {
 }
 
 .modules-left, .modules-right {
-  background: #333333;
+  background: #ffffff;
 }
 
 #window, #cpu, #memory, #disk, #language, #clock {
-  color: #999999;
+  color: #ffffff;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -29,19 +29,15 @@ window#waybar {
 }
 
 #workspaces button {
-  color: #999999;
+  color: #ffffff;
   padding-left:  5px;
   padding-right: 5px;
-  border-bottom: 1px solid #999999;
 }
 
 #workspaces button.empty {
-  border-bottom: 1px solid transparent;
+  color: #cccccc;
 }
 
-#workspaces button.active:not(.empty) {
-  border-bottom: 1px solid #444444;
-}
 
 #workspaces button.active {
   color: #333333;
