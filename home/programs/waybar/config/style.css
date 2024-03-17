@@ -49,13 +49,8 @@ window#waybar {
 #workspaces button.active {
   color: #333333;
   background: #db4740;
-  border-bottom: 2px solid #ffffff;
-}
-
-#workspaces button.active::after {
-  display: block;
-  height: 2px;
-  background-color: #ffffff;
-  width: 50%;
-  margin: 0 auto;
+  background-image: linear-gradient(to right, transparent 25%, #333333 25%, #333333 75%, transparent 75%);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 50% 1px;
 }
