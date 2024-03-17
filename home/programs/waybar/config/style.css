@@ -32,14 +32,14 @@ window#waybar {
   color: #ffffff;
   padding-left:  5px;
   padding-right: 5px;
+  box-shadow: none;
+  text-shadow: none;
+  transition: none;
 }
 
 #workspaces button:hover {
   color: #333333;
   background: #db4740;
-  box-shadow: none;
-  text-shadow: none;
-  transition: none;
 }
 
 #workspaces button.empty:not(:hover) {
@@ -47,6 +47,6 @@ window#waybar {
 }
 
 #workspaces button.active {
-  color: #333333;
+  color: #333333 !important;
   background: #db4740;
 }
