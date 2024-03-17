@@ -35,10 +35,11 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  color: #333333;
-  background: #db4740;
   box-shadow: none;
   text-shadow: none;
+  color: none;
+  background: none;
+  transition: none;
 }
 
 #workspaces button.empty {
