@@ -49,4 +49,14 @@ window#waybar {
 #workspaces button.active {
   color: #333333;
   background: #db4740;
+  border-bottom: 2px solid #ffffff;
+}
+
+#workspaces button.active::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #ffffff;
+  width: 50%;
+  margin: 0 auto;
 }
