@@ -42,11 +42,11 @@ window#waybar {
   background: #db4740;
 }
 
-#workspaces button.empty:not(:hover) {
+#workspaces button.empty:not(:hover):not(.active) {
   color: #999999;
 }
 
 #workspaces button.active {
-  color: #333333 !important;
+  color: #333333;
   background: #db4740;
 }
