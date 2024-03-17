@@ -49,7 +49,7 @@ window#waybar {
 #workspaces button.active {
   color: #333333;
   background: #db4740;
-  background-image: linear-gradient(#333333, #333333);
+  background-image: #333333;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 70% 1px;
