@@ -5,7 +5,6 @@
 
     "hyprland/workspaces": {
       "format": "{icon}",
-      "disable-click": true,
       "tooltip": false,
       "format-icons": {
         "1": " ",
