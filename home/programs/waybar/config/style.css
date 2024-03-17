@@ -14,7 +14,7 @@ window#waybar {
 }
 
 .modules-left, .modules-right {
-  background: #ffffff;
+  background: #333333;
 }
 
 #window, #cpu, #memory, #disk, #language, #clock {
