@@ -39,11 +39,11 @@ window#waybar {
   border-bottom: 1px solid transparent;
 }
 
+#workspaces button.active:not(.empty) {
+  border-bottom: 1px solid #555555;
+}
+
 #workspaces button.active {
   color: #333333;
   background: #db4740;
-}
-
-#workspaces button.active.empty {
-  border-bottom: 1px solid #555555;
 }
