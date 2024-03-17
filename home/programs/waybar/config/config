@@ -4,7 +4,6 @@
     "layer": "top",
 
     "hyprland/workspaces": {
-      "on-click": "activate",
       "format": "{icon}",
       "tooltip": false,
       "format-icons": {
