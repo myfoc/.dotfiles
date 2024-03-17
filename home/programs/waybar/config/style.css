@@ -42,7 +42,7 @@ window#waybar {
   transition: none;
 }
 
-#workspaces button.empty {
+#workspaces button.empty:not(:hover) {
   color: #999999;
 }
 
