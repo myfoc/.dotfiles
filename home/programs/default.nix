@@ -2,7 +2,6 @@
   imports = [
     ./foot
     ./hyprland
-    ./pass
     ./rofi
     ./starship
     ./swww
