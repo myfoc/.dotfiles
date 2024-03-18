@@ -42,6 +42,7 @@
     "pulseaudio": {
       "scroll-step": 5,
       "format": "{icon}{volume}%",
+      "tooltip": false,
       "format-icons": {
         "default": [" ", " ", " "]
       }
