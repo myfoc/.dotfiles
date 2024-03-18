@@ -44,6 +44,12 @@
       "format-en": "English",
       "format-ru": "Russian"
     },
+    "custom/weather": {
+      "format": "󰖞 {}",
+      "interval": 60,
+      "exec": "~/.config/waybar/weather.sh",
+      "tooltip": false
+    },  
     "clock#date": {
       "format": "  {:%a %d/%m/%y}",
       "tooltip": false
