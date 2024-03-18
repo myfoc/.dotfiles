@@ -39,17 +39,18 @@
       "tooltip": false,
       "interval": 60
     },
+    "pulseaudio": {
+      "scroll-step": 5,
+      "format": "{icon}{volume}%",
+      "format-icons": {
+        "default": [" ", " ", " "]
+      }
+    },  
     "hyprland/language": {
       "format": "  {}",
       "format-en": "English",
       "format-ru": "Russian"
     },
-    "custom/weather": {
-      "format": "󰖞 {}",
-      "interval": 60,
-      "exec": "~/.config/waybar/weather.sh",
-      "tooltip": false
-    },  
     "clock#date": {
       "format": "  {:%a %d/%m/%y}",
       "tooltip": false
@@ -68,6 +69,7 @@
       "cpu",
       "memory",
       "disk",
+      "pulseaudio",
       "hyprland/language",
       "clock#date",
       "clock#time"
