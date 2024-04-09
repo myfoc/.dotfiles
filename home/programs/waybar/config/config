@@ -13,13 +13,9 @@
         "3": "三",
         "4": "四",
         "5": "五",
-        "6": "六",
-        "7": "七",
-        "8": "八",
-        "9": "九",
         "sort-by-number": true
       },
-      "persistent-workspaces": { "*": 9 }
+      "persistent-workspaces": { "*": 5 }
     },
     "hyprland/window": {
       "format": "{title}",
