@@ -8,19 +8,18 @@
       "format": "{icon}",
       "tooltip": false,
       "format-icons": {
-        "1": " ",
-        "2": " ",
-        "3": " ",
-        "4": " ",
-        "5": " ",
-        "6": " ",
-        "7": " ",
-        "8": " ",
-        "9": " ",
-        "10": " ",
+        "1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "8": "八",
+        "9": "九",
         "sort-by-number": true
       },
-      "persistent-workspaces": { "*": 10 }
+      "persistent-workspaces": { "*": 9 }
     },
     "hyprland/window": {
       "format": "{title}",
@@ -33,11 +32,6 @@
     "memory": {
       "format": "  {}%",
       "tooltip": false
-    },
-    "disk": {
-      "format": "󰋊  {percentage_used}%",
-      "tooltip": false,
-      "interval": 60
     },
     "pulseaudio": {
       "scroll-step": 5,
@@ -54,12 +48,8 @@
       "format-en": "English",
       "format-ru": "Russian"
     },
-    "clock#date": {
-      "format": "  {:%a %d/%m/%y}",
-      "tooltip": false
-    },
-    "clock#time": {
-      "format": "  {:%I:%M:%S %p}",
+    "clock": {
+      "format": "  {:%a %d/%m %I:%M:%S %p}",
       "tooltip": false,
       "interval": 1
     },
@@ -71,11 +61,9 @@
     "modules-right": [
       "cpu",
       "memory",
-      "disk",
       "pulseaudio",
       "hyprland/language",
-      "clock#date",
-      "clock#time"
+      "clock"
     ]
   }
 ]
