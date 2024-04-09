@@ -37,16 +37,16 @@ window#waybar {
   transition: none;
 }
 
+#workspaces button.empty:not(:hover):not(.active) {
+  color: #aaaaaa;
+}
+
 #workspaces button:hover {
   color: #333333;
   background: #db4740;
 }
 
-#workspaces button.empty:not(:hover):not(.active) {
-  color: #cccccc;
-}
-
 #workspaces button.active {
-  color: #db4740;
-  background: #333333;
+  color: #333333;
+  background: #db4740;
 }
