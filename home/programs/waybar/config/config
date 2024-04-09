@@ -17,10 +17,16 @@
       },
       "persistent-workspaces": { "*": 5 }
     },
+    "hyprland/submap": {
+      "format": "{}",
+      "max-length": 8,
+      "tooltip": false
+    },
     "hyprland/window": {
       "format": "{title}",
       "separate-outputs": true
     },
+
     "cpu": {
       "format": "󰍛  {usage}%",
       "tooltip": false
@@ -41,17 +47,18 @@
     },  
     "hyprland/language": {
       "format": "  {}",
-      "format-en": "English",
-      "format-ru": "Russian"
+      "format-en": "EN",
+      "format-ru": "RU"
     },
     "clock": {
-      "format": "  {:%a %d/%m %I:%M:%S %p}",
+      "format": "  {:%I:%M:%S %p}",
       "tooltip": false,
       "interval": 1
     },
 
     "modules-left": [
       "hyprland/workspaces",
+      "hyprland/submap",
       "hyprland/window"
     ],
     "modules-right": [
