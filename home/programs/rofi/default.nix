@@ -2,9 +2,9 @@
   programs.rofi = {
     enable = true;
   };
-  programs.tofi = {
-    enable = true;
-  };
+  home.packages = with pkgs; [
+    tofi
+  ];
 
   home.file.".config/rofi" = {
     recursive = true;
