@@ -20,6 +20,7 @@
     "hyprland/submap": {
       "format": "{}",
       "max-length": 8,
+      "always-on": true,
       "tooltip": false
     },
     "hyprland/window": {
@@ -37,7 +38,7 @@
     },
     "pulseaudio": {
       "scroll-step": 5,
-      "format": "{icon}{volume}%",
+      "format": "{icon} {volume}%",
       "tooltip": false,
       "on-scroll-up": "",
       "on-scroll-down": "",
