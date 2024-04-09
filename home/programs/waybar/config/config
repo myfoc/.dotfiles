@@ -43,6 +43,8 @@
       "scroll-step": 5,
       "format": "{icon}{volume}%",
       "tooltip": false,
+      "on-scroll-up": "",
+      "on-scroll-down": "",
       "format-icons": {
         "default": [" ", " ", " "]
       }
