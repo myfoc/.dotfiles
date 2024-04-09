@@ -17,17 +17,23 @@
       },
       "persistent-workspaces": { "*": 5 }
     },
-    "hyprland/submap": {
-      "format": "{}",
-      "max-length": 8,
-      "always-on": true,
-      "tooltip": false
-    },
     "hyprland/window": {
       "format": "{title}",
       "separate-outputs": true
     },
 
+    "network": {
+      "format": "{ifname} 1",
+      "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+      "format-wifi": "{essid} ({signalStrength}%) ",
+      "format-linked": "{essid} ({signalStrength}%) ",
+      "format-disconnected": "",
+      "format-icons": {
+        "default": [" ", " ", " "]
+      },
+      "max-length": 50,
+      "tooltip": false
+    },
     "cpu": {
       "format": "󰍛  {usage}%",
       "tooltip": false
@@ -59,10 +65,10 @@
 
     "modules-left": [
       "hyprland/workspaces",
-      "hyprland/submap",
       "hyprland/window"
     ],
     "modules-right": [
+      "network",
       "cpu",
       "memory",
       "pulseaudio",
