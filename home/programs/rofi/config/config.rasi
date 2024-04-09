@@ -6,10 +6,10 @@ configuration {
 }
 
 *{
-	accent: #d4be98;
-	foreground: #d4be98;
-	background: #3c3836;	
-	background-alt: #4d4642;
+	accent: #db4740;
+	foreground: #db4740;
+	background: #333333;	
+	background-alt: #333333;
 }
 
 * {
@@ -20,8 +20,9 @@ configuration {
 window {
 	width: 360px;
 	border-radius: 0;
-	border: 0;
+	border: 2px;
 	padding: 0;
+	border-color: @accent;
 	background-color: @background;
 }
 
