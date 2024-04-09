@@ -7,7 +7,7 @@ configuration {
 
 *{
 	accent: #db4740;
-	foreground: #db4740;
+	foreground: #ffffff;
 	background: #333333;	
 	background-alt: #333333;
 }
