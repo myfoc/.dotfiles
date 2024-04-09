@@ -13,7 +13,7 @@ configuration {
 }
 
 * {
-	font: "JetbrainsMono Nerd Font 14";
+	font: "Iosevka Nerd Font 12";
 	separatorcolor: transparent;
 }
 
@@ -39,7 +39,7 @@ inputbar {
 }
 
 prompt {
-	font: "JetbrainsMono Nerd Font 20";
+	font: "Iosevka Nerd Font 12";
 	background-color: @background-alt;
 	text-color: @accent;
 	enabled: true;
