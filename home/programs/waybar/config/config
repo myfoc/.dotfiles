@@ -8,11 +8,11 @@
       "format": "{icon}",
       "tooltip": false,
       "format-icons": {
-        "1": "一",
-        "2": "二",
-        "3": "三",
-        "4": "四",
-        "5": "五",
+        "1": "I",
+        "2": "II",
+        "3": "III",
+        "4": "IV",
+        "5": "V",
         "sort-by-number": true
       },
       "persistent-workspaces": { "*": 5 }
