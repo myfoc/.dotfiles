@@ -4,7 +4,6 @@
     ./hyprland
     ./rofi
     ./starship
-    ./swww
     ./waybar
     ./zsh
   ];
