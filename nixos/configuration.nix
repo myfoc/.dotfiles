@@ -67,6 +67,8 @@
     };
   };
 
+  programs.zsh.enable = true;
+
   services.greetd = {
     enable = true;
     settings = {
