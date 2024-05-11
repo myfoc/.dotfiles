@@ -1,45 +1,76 @@
-[window]
-padding = { x = 10, y = 10 }
-
+# Default colors
 [colors.primary]
-background = "#32302f"
-foreground = "#ebdbb2"
+background = '#24273A' # base
+foreground = '#CAD3F5' # text
+# Bright and dim foreground colors
+dim_foreground = '#CAD3F5' # text
+bright_foreground = '#CAD3F5' # text
 
+# Cursor colors
+[colors.cursor]
+text = '#24273A' # base
+cursor = '#F4DBD6' # rosewater
+
+[colors.vi_mode_cursor]
+text = '#24273A' # base
+cursor = '#B7BDF8' # lavender
+
+# Search colors
+[colors.search.matches]
+foreground = '#24273A' # base
+background = '#A5ADCB' # subtext0
+
+[colors.search.focused_match]
+foreground = '#24273A' # base
+background = '#A6DA95' # green
+
+[colors.footer_bar]
+foreground = '#24273A' # base
+background = '#A5ADCB' # subtext0
+
+# Keyboard regex hints
+[colors.hints.start]
+foreground = '#24273A' # base
+background = '#EED49F' # yellow
+
+[colors.hints.end]
+foreground = '#24273A' # base
+background = '#A5ADCB' # subtext0
+
+# Selection colors
+[colors.selection]
+text = '#24273A' # base
+background = '#F4DBD6' # rosewater
+
+# Normal colors
 [colors.normal]
-black = "#282828"
-red = "#cc241d"
-green = "#98971a"
-yellow = "#d79921"
-blue = "#458588"
-magenta = "#b16286"
-cyan = "#689d6a"
-white = "#a89984"
+black = '#494D64' # surface1
+red = '#ED8796' # red
+green = '#A6DA95' # green
+yellow = '#EED49F' # yellow
+blue = '#8AADF4' # blue
+magenta = '#F5BDE6' # pink
+cyan = '#8BD5CA' # teal
+white = '#B8C0E0' # subtext1
 
+# Bright colors
 [colors.bright]
-black = "#928374"
-red = "#fb4934"
-green = "#b8bb26"
-yellow = "#fabd2f"
-blue = "#83a598"
-magenta = "#d3869b"
-cyan = "#8ec07c"
-white = "#ebdbb2"
+black = '#5B6078' # surface2
+red = '#ED8796' # red
+green = '#A6DA95' # green
+yellow = '#EED49F' # yellow
+blue = '#8AADF4' # blue
+magenta = '#F5BDE6' # pink
+cyan = '#8BD5CA' # teal
+white = '#A5ADCB' # subtext0
 
-[font]
-size = 13.0
-
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "Regular"
-
-[font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Bold"
-
-[font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Italic"
-
-[font.bold_italic]
-family = "JetBrainsMono Nerd Font"
-style = "Bold Italic"
+# Dim colors
+[colors.dim]
+black = '#494D64' # surface1
+red = '#ED8796' # red
+green = '#A6DA95' # green
+yellow = '#EED49F' # yellow
+blue = '#8AADF4' # blue
+magenta = '#F5BDE6' # pink
+cyan = '#8BD5CA' # teal
+white = '#B8C0E0' # subtext1
