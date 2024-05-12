@@ -3,9 +3,9 @@
     enable = true;
   };
 
-  # home.file.".config/river" = {
-  #   recursive = true;
-  #   source = ./config;
-  #   target = ".config/river";
-  # };
+  home.file.".config/river" = {
+    recursive = true;
+    source = ./config;
+    target = ".config/river";
+  };
 }
