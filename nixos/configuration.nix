@@ -3,7 +3,7 @@
     ./hardware-configuration.nix
   ];
 
-  boot.loader = { 
+  boot.loader = {
     systemd-boot = {
       enable = true;
       configurationLimit = 3;
@@ -50,7 +50,7 @@
       WLR_NO_HARDWARE_CURSORS = "1";
       NIXOS_OZONE_WL = "1";
     };
-    
+
     systemPackages = with pkgs; [
       nano
       wget
@@ -69,15 +69,15 @@
 
   programs.zsh.enable = true;
 
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
-        user = userSettings.username;
-      };
-    };
-  };
+  # services.greetd = {
+  #   enable = true;
+  #   settings = {
+  #     default_session = {
+  #       command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
+  #       user = userSettings.username;
+  #     };
+  #   };
+  # };
 
   system.stateVersion = systemSettings.version;
 }
