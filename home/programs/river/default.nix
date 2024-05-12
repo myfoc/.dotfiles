@@ -4,9 +4,8 @@
     enable = true;
   };
 
-  home.file.".config/river/init.sh" = {
-    source = ./config/init.sh;
-    target = ".config/river/init.sh";
+  home.file.".config/river/init" = {
+    source = ./config/init;
     executable = true;
   };
 }
