@@ -3,9 +3,9 @@
 		enable = true;
 	};
 
-	home.file.".config/river" = {
+	home.file.".config/river/init" = {
+    	source = ./config/init;
+   		target = ".config/river/init";
 		executable = true;
-     	source = ./config;
-      	target = ".config/river";
     };
 }
