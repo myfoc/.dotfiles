@@ -1,11 +1,14 @@
 { config, lib, pkgs, ... }: {
-  wayland.windowManager.river = {
-    enable = true;
-  };
+	wayland.windowManager.river = {
+		enable = true;
+	};
 
-  home.file.".config/river" = {
-    recursive = true;
-    source = ./config;
-    target = ".config/river";
-  };
+	home.file.".config/river" = {
+    	recursive = true;
+     	source = ./config;
+      	target = ".config/river";
+       	postBuild = ''
+        	chmod +x $out/.config/river/init.sh
+        '';
+    };
 }
