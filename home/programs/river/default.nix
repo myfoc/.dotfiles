@@ -5,7 +5,6 @@
 
 	home.file.".config/river" = {
 		executable = true;
-    	recursive = true;
      	source = ./config;
       	target = ".config/river";
     };
