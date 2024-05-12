@@ -1,9 +1,9 @@
 {
   imports = [
     ./foot
-    ./hyprland
-    ./rofi
     ./nerdfonts
+    ./river
+    ./rofi
     ./starship
     ./waybar
     ./zsh
