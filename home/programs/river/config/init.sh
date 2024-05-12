@@ -1,5 +1,5 @@
 #!/bin/sh
 
-riverctl map normal Shift Return spawn foot
-riverctl map normal Shift Q close
-riverctl map normal Shift E exit
+mod="Mod4"
+
+riverctl map normal $mod E exit
