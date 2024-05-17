@@ -3,8 +3,8 @@
     enable = true;
   };
 
-  home.file.".config/river/init" = {
-    source = ./config/init;
+  home.file.".config/river/init.sh" = {
+    source = ./config/init.sh;
     executable = true;
   };
 }
