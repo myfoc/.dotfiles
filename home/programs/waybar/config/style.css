@@ -28,7 +28,7 @@ window#waybar {
     margin-bottom: 2px;
 }
 
-#tags button.active {
+#tags button.focused {
     color: #ebdbb2;
     background: #665c54;
 }
