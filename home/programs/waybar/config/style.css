@@ -17,7 +17,7 @@ window#waybar {
     color: #ebdbb2;
 }
 
-#workspaces button {
+#tags button {
     padding: 0 0.6em;
     color: #a89984;
     background: #504945;
@@ -28,17 +28,17 @@ window#waybar {
     margin-bottom: 2px;
 }
 
-#workspaces button.active {
+#tags button.active {
     color: #ebdbb2;
     background: #665c54;
 }
 
-#workspaces button.urgent {
+#tags button.urgent {
     color: #1d2021;
     background: #fb4934;
 }
 
-#workspaces button:hover {
+#tags button:hover {
     background: #665c54;
 }
 

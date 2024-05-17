@@ -6,7 +6,7 @@
   "reload_style_on_change": true,
 
   "modules-left": [ "custom/spotify", "memory", "disk" ],
-  "modules-center": [ "hyprland/workspaces" ],
+  "modules-center": [ "river/tags ],
   "modules-right": [ "network", "clock#time", "tray" ],
 
   "custom/spotify": {
