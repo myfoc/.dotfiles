@@ -116,12 +116,6 @@ riverctl spawn "$HOME/bin/dynamic-wallpaper.sh"
 # Startup apps
 # Waybar
 riverctl spawn waybar
-riverctl spawn nextcloud
-riverctl spawn swayidle
-riverctl spawn blueberry-tray
-
-# ThinkPad trackpoint speed
-riverctl spawn 'echo 128 > /sys/devices/platform/i8042/serio1/serio2/sensitivity'
 
 riverctl keyboard-layout gb
 

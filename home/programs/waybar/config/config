@@ -1,192 +1,100 @@
-// =============================================================================
-//
-// Waybar configuration
-//
-// Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
-//
-// =============================================================================
 
 {
-    // -------------------------------------------------------------------------
-    // Global configuration
-    // -------------------------------------------------------------------------
+  "layer": "bottom",
+  "position": "top",
+  "height": 28,
+  "reload_style_on_change": true,
 
-    "layer": "bottom",
+  "modules-left": [ "custom/spotify", "memory", "disk" ],
+  "modules-center": [ "hyprland/workspaces" ],
+  "modules-right": [ "network", "clock#time", "tray" ],
 
-    "position": "top",
+  "custom/spotify": {
+    "exec": "$HOME/.config/waybar/scripts/spotify.py --player spotify",
+	"format": "<span size='10000' foreground='#98971a'> </span>{}",
+    "return-type": "json",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-scroll-up": "playerctl -p spotify next",
+    "on-scroll-down": "playerctl -p spotify previous",
+	"on-click-right-release": "hyprctl dispatch workspace 6",
+	"tooltip": false,
+  },
 
-    // If height property would be not present, it'd be calculated dynamically
-    "height": 28,
+  "memory": {
+    "interval": 1,
+    "format": "<span foreground='#d79921'>   </span>{used:0.1f}GiB"
+  },
 
-    "reload_style_on_change": true,
+  "disk": {
+	"interval": 60,
+	"format": "<span foreground='#d79921'>   </span>{used}",
+	"tooltip": false,
+  },
 
-    "modules-left": [
-        "river/tags",
-    ],
-    "modules-center": [
-        // "river/window"
-	"custom/weather",
-        "clock"
-    ],
-    "modules-right": [
-        "network",
-        // "memory",
-        // "cpu",
-        // "temperature",
-        // "custom/keyboard-layout",
-        "backlight",
-	"custom/wlsunset",
-        "pulseaudio",
-        "battery",
-        "idle_inhibitor",
-        "tray",
-    ],
+  "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click-release": "activate",
+      "sort-by-numbers": false,
+	  "on-scroll-up": "hyprctl dispatch workspace e+1",
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
+      "format-icons": {
+		  "1": "I",
+		  "2": "II",
+		  "3": "III",
+		  "4": "IV",
+		  "5": "V",
+		  "6": "VI",
+		  "7": "VII",
+		  "8": "VIII",
+		  "9": "IX",
+		  "10": "X",
+      }
+  },
 
+  "hyprland/language": {
+    "format": "<span size='9000' foreground='#d79921'>  </span>{}",
+	"format-en": "ENG",
+	"format-ru": "RU",
+	"tooltip": false,
+	"on-click-release": "hyprctl switchxkblayout sonix-usb-device next"
+  },
 
-    // -------------------------------------------------------------------------
-    // Modules
-    // -------------------------------------------------------------------------
+  "network": {
+	"interval": 1,
+	"format-wifi": "<span foreground='#d79921'>{icon}  </span>{essid}<span foreground='#d79921'>      </span>{bandwidthUpBytes}<span foreground='#d79921'>     </span>{bandwidthDownBytes} ",
+    "format-disconnected": "",
+	"format-ethernet": "<span foreground='#d79921'>  </span>Connected",
+	"on-click-right-release": "alacritty --class nmtui -T 'Network Settings' -e nmtui",
+	"on-click-release": "$HOME/.config/waybar/scripts/network.sh",
+	"format-icons": [
+		"󰤯 ",
+		"󰤟 ",
+		"󰤢 ",
+		"󰤥 ",
+		"󰤨 "
+	]
+  },
 
-    "backlight": {
-        "format": "<b></b> {percent}%",
-        "interval": 2,
-        "on-scroll-up": "brightnessctl set +2%",
-        "on-scroll-down": "brightnessctl set 2%-"
-    },
+  "bluetooth": {
+	  "format-connected": "<span foreground='#d79921' size='11500' rise='-1pt'>󰂯 </span>{device_alias}",
+	  "format": "",
+	  "tooltip": false
+  },
 
-    "battery": {
-        "interval": 10,
-        "states": {
-            "warning": 25,
-            "critical": 15
-        },
-        // Connected to AC
-        "format": " {capacity}%", // Icon: bolt
-        // Not connected to AC
-        "format-discharging": "{icon} {capacity}%",
-        "format-icons": [
-            "",  // Icon: battery-empty
-            "", // Icon: battery-quarter
-            "", // Icon: battery-half
-            "", // Icon: battery-three-quarters
-            "" // Icon: battery-full
-        ],
-        "tooltip": true
-    },
+  "clock#time": {
+    "interval": 1,
+    "format": "<span foreground='#d79921' size='10000'> </span>{:%I:%M %p} ",
+    "tooltip": false,
+	"on-click-release": "bash $HOME/.config/waybar/scripts/date.sh"
 
-    "clock": {
-        "interval": 1,
-        "format": "{:%a %e %b %H:%M}",
-        "tooltip": false
-    },
+  },
 
-    "cpu": {
-        "interval": 3,
-        "format": " {usage}% ({load})", // Icon: microchip
-        "states": {
-          "warning": 70,
-          "critical": 90
-        },
-    },
-
-    "custom/wlsunset": {
-        "interval": "once",
-        "return-type": "json",
-        "format": "<b>{icon}</b>",
-        "format-icons": {
-          "on": "",
-          "off": ""
-        },
-        "exec": "~/bin/wlsunset.sh status",
-        "on-click": "~/bin/wlsunset.sh toggle; pkill -RTMIN+6 waybar",
-        "signal": 6
-    },
-
-    "custom/weather": {
-	"format": "{}°",
-	"tooltip": true,
-	"interval": 3600,
-	"exec": "wttrbar",
-	"return-type": "json",
-    },
-
-    "custom/keyboard-layout": {
-      "exec": "swaymsg -t get_inputs | grep -m1 'xkb_active_layout_name' | cut -d '\"' -f4 | cut -d ' ' -f1",
-      // Interval set only as a fallback, as the value is updated by signal
-      "interval": 10,
-      "format": " {}", // Icon: keyboard
-      // Signal sent by Sway key binding (~/.config/sway/key-bindings)
-      "signal": 1, // SIGHUP
-      "tooltip": false,
-      "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
-      "on-scroll-up": "swaymsg input type:keyboard xkb_switch_layout next",
-      "on-scroll-down": "swaymsg input type:keyboard xkb_switch_layout prev",
-    },
-
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": "",
-        },
-    },
-
-    "memory": {
-        "interval": 3,
-        "format": " {}%", // Icon: memory
-        "states": {
-            "warning": 70,
-            "critical": 90
-        }
-    },
-
-    "network": {
-        "interval": 3,
-        "format-wifi": " {essid}", // Icon: wifi
-        "format-ethernet": " {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
-        "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr} (signal: {signalStrength}%)"
-    },
-
-    "pulseaudio": {
-        "scroll-step": 2,
-        "format": "{icon} {volume}%",
-        "format-muted": " Muted", // Icon: volume-mute
-        "format-icons": {
-            "headphones": "", // Icon: headphones
-            "handsfree": "", // Icon: headset
-            "headset": "", // Icon: headset
-            "phone": "", // Icon: phone
-            "portable": "", // Icon: phone
-            "car": "", // Icon: car
-            "default": ["", ""] // Icons: volume-down, volume-up
-        },
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "on-click-right": "alacritty --title='Sound Mixer' --command='pulsemixer'",
-        "tooltip": true
-    },
-
-    "river/window": {
-      "max-length": 60,
-    },
-
-    "temperature": {
-      "critical-threshold": 75,
-      "interval": 3,
-      "format": "{icon} {temperatureC}°C",
-      "format-icons": [
-          "", // Icon: temperature-empty
-          "", // Icon: temperature-quarter
-          "", // Icon: temperature-half
-          "", // Icon: temperature-three-quarters
-          ""  // Icon: temperature-full
-      ],
-      "tooltip": true
-    },
-
-    "tray": {
-        "icon-size": 18,
-        "spacing": 10
-    }
+  "tray": {
+    "icon-size": 14,
+    "spacing": 10,
+	"show-passive-items": true
+  },
 
 }
+
+// vim:ft=jsonc

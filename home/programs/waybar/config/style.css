@@ -1,217 +1,61 @@
-/* =============================================================================
- *
- * Waybar styles
- *
- * Styles reference: https://github.com/Alexays/Waybar/wiki/Configuration
- *
- * =========================================================================== */
-
-@define-color color-rosewater #dc8a78;
-@define-color color-flamingo #dd7878;
-@define-color color-pink #ea76cb;
-@define-color color-mauve #8839ef;
-@define-color color-red #d20f39;
-@define-color color-maroon #e64553;
-@define-color color-peach #fe640b;
-@define-color color-yellow #df8e1d;
-@define-color color-green #40a02b;
-@define-color color-teal #179299;
-@define-color color-sky #04a5e5;
-@define-color color-sapphire #209fb5;
-@define-color color-blue #1e66f5;
-@define-color color-lavender #7287fd;
-@define-color color-text #4c4f69;
-@define-color color-subtext1 #5c5f77;
-@define-color color-subtext0 #6c6f85;
-@define-color color-overlay2 #7c7f93;
-@define-color color-overlay1 #8c8fa1;
-@define-color color-overlay0 #9ca0b0;
-@define-color color-surface2 #acb0be;
-@define-color color-surface1 #bcc0cc;
-@define-color color-surface0 #ccd0da;
-@define-color color-base #eff1f5;
-@define-color color-mantle #e6e9ef;
-@define-color color-crust #dce0e8;
-
-/* -----------------------------------------------------------------------------
- * Keyframes
- * -------------------------------------------------------------------------- */
-
-@keyframes blink-warning {
-    70% {
-        color: @color-base;
-    }
-
-    to {
-        color: @color-base;
-        background-color: @color-peach;
-    }
-}
-
-@keyframes blink-critical {
-    70% {
-        color: @color-base;
-    }
-
-    to {
-        color: @color-base;
-        background-color: @color-peach;
-    }
-}
-
-/* -----------------------------------------------------------------------------
- * Base styles
- * -------------------------------------------------------------------------- */
-
-/* Reset all styles */
 * {
     border: none;
-    border-radius: 0;
+    font-family: JetBrainsMono;
+    font-weight: bold;
+    font-size: 11px;
     min-height: 0;
-    margin: 0;
-    padding: 0;
 }
 
-/* The whole bar */
-#waybar {
-    background-color: @color-base;
-    color: @color-text;
-    font-family: Inter, "Font Awesome 6 Free";
-    font-size: 14px;
+tooltip {
+    background: #282828;
+    border: 0px solid;
+    border-radius: 0px;
 }
 
-/* -----------------------------------------------------------------------------
- * Module styles
- * -------------------------------------------------------------------------- */
+window#waybar {
+    background: #282828;
+    color: #ebdbb2;
+}
 
-/* Each module */
-#backlight,
-#battery,
+#workspaces button {
+    padding: 0 0.6em;
+    color: #a89984;
+    background: #504945;
+    border-radius: 0px;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#workspaces button.active {
+    color: #ebdbb2;
+    background: #665c54;
+}
+
+#workspaces button.urgent {
+    color: #1d2021;
+    background: #fb4934;
+}
+
+#workspaces button:hover {
+    background: #665c54;
+}
+
+#disk,
 #clock,
-#cpu,
-#custom-keyboard-layout,
-#custom-wlsunset,
-#idle_inhibitor,
 #memory,
-#mode,
 #network,
-#pulseaudio,
-#temperature,
+#workspaces,
+#custom-spotify,
+#bluetooth,
 #tray {
-    margin-left: 12px;
-}
-
-#backlight {
-    /* No styles */
-}
-
-#battery {
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#battery.warning {
-    color: @color-peach;
-}
-
-#battery.critical {
-    color: @color-red;
-}
-
-#battery.warning.discharging {
-    animation-name: blink-warning;
-    animation-duration: 3s;
-}
-
-#battery.critical.discharging {
-    animation-name: blink-critical;
-    animation-duration: 2s;
-}
-
-#clock {
-    /* No styles */
-}
-
-#network {
-    /* No styles */
-}
-
-#network.disconnected {
-    color: @color-peach;
-}
-
-#pulseaudio {
-    /* No styles */
-}
-
-#pulseaudio.muted {
-    color: @color-peach;
-}
-
-#temperature {
-    /* No styles */
-}
-
-#temperature.critical {
-    color: @color-red;
-}
-
-#tray {
-    /* No styles */
-}
-
-#window {
-    margin-left: 32px;
-    margin-right: 32px;
-    font-weight: 700;
-}
-
-#tags {
-    padding: 3px;
-}
-
-#tags button {
-    min-width: 0;
-    padding: 0 8px;
-    margin: 0;
-    border: none;
-    background-color: @color-crust;
-}
-
-#tags button.occupied {
-    background-color: #b4befe;
-}
-
-#tags button.focused {
-    background-color: @color-lavender;
-    color: @color-base;
-}
-
-#tags button.urgent {
-    background-color: @color-red;
-}
-
-#tags button:last-child {
-    border-radius: 0 8px 8px 0;
-    padding-right: 12px;
-}
-
-#tags button:hover {
-    background-color: @color-mantle;
-    color: @color-text;
-}
-
-.modules-right {
-    background-color: @color-crust;
-    border-radius: 8px 0 0 8px;
-    padding-right: 8px;
-    margin: 3px;
-}
-
-.modules-center {
-    background-color: @color-crust;
-    padding: 0 8px;
-    border-radius: 8px;
-    margin: 3px;
+    color: #d5c4a1;
+    background: #433e3c;
+    padding: 0 0.6em;
+    margin-right: 4px;
+    margin-left: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 0px;
 }
