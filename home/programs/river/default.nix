@@ -1,10 +1,10 @@
 { config, lib, pkgs, ... }: {
-  wayland.windowManager.river = {
+  services.river = {
     enable = true;
-  };
-
-  home.file.".config/river/init.sh" = {
-    source = ./config/init.sh;
-    executable = true;
+    extraConfig = ''
+      riverctl map normal Super Return spawn foot
+      riverctl map normal Super Q close
+      riverctl map normal Super+Shift E exit
+    '';
   };
 }
