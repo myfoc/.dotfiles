@@ -6,13 +6,8 @@
   "reload_style_on_change": true,
 
   "modules-left": [ "custom/spotify", "memory", "disk" ],
-  "modules-center": [ "river/tags" ],
+  "modules-center": [ "hyprland/workspaces" ],
   "modules-right": [ "network", "clock#time", "tray" ],
-
-  "river/tags": {
-  	"num-tags": 5,
-    "tag-labels": [ "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" ]
-  },
 
   "custom/spotify": {
     "exec": "$HOME/.config/waybar/scripts/spotify.py --player spotify",

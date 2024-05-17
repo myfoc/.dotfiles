@@ -1,9 +1,8 @@
 {
   imports = [
     ./foot
-    ./nerdfonts
-    ./river
-    ./starship
+    ./hyprland
+    ./packages
     ./waybar
   ];
 }

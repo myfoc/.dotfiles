@@ -17,7 +17,8 @@ window#waybar {
     color: #ebdbb2;
 }
 
-#tags button {
+#workspaces button {
+    padding: 0 0.6em;
     color: #a89984;
     background: #504945;
     border-radius: 0px;
@@ -27,25 +28,25 @@ window#waybar {
     margin-bottom: 2px;
 }
 
-#tags button.focused {
+#workspaces button.active {
     color: #ebdbb2;
     background: #665c54;
 }
 
-#tags button.urgent {
+#workspaces button.urgent {
     color: #1d2021;
     background: #fb4934;
 }
 
-#tags button:hover {
+#workspaces button:hover {
     background: #665c54;
 }
 
-#tags,
 #disk,
 #clock,
 #memory,
 #network,
+#workspaces,
 #custom-spotify,
 #bluetooth,
 #tray {
