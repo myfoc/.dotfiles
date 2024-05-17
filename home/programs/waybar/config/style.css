@@ -6,12 +6,6 @@
     min-height: 0;
 }
 
-tooltip {
-    background: #282828;
-    border: 0px solid;
-    border-radius: 0px;
-}
-
 window#waybar {
     background: #282828;
     color: #ebdbb2;
@@ -26,6 +20,9 @@ window#waybar {
     margin-left: 4px;
     margin-top: 2px;
     margin-bottom: 2px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
 }
 
 #workspaces button.active {
@@ -42,14 +39,7 @@ window#waybar {
     background: #665c54;
 }
 
-#disk,
-#clock,
-#memory,
-#network,
-#workspaces,
-#custom-spotify,
-#bluetooth,
-#tray {
+#workspaces {
     color: #d5c4a1;
     background: #433e3c;
     padding: 0 0.6em;
