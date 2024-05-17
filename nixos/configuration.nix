@@ -61,23 +61,10 @@
   users.users = {
     ${userSettings.username} = {
       isNormalUser = true;
-      shell = pkgs.zsh;
       description = userSettings.name;
       extraGroups = [ "networkmanager" "wheel" ];
     };
   };
-
-  programs.zsh.enable = true;
-
-  # services.greetd = {
-  #   enable = true;
-  #   settings = {
-  #     default_session = {
-  #       command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
-  #       user = userSettings.username;
-  #     };
-  #   };
-  # };
 
   system.stateVersion = systemSettings.version;
 }
