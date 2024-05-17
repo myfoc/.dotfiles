@@ -1,52 +1,217 @@
+/* =============================================================================
+ *
+ * Waybar styles
+ *
+ * Styles reference: https://github.com/Alexays/Waybar/wiki/Configuration
+ *
+ * =========================================================================== */
+
+@define-color color-rosewater #dc8a78;
+@define-color color-flamingo #dd7878;
+@define-color color-pink #ea76cb;
+@define-color color-mauve #8839ef;
+@define-color color-red #d20f39;
+@define-color color-maroon #e64553;
+@define-color color-peach #fe640b;
+@define-color color-yellow #df8e1d;
+@define-color color-green #40a02b;
+@define-color color-teal #179299;
+@define-color color-sky #04a5e5;
+@define-color color-sapphire #209fb5;
+@define-color color-blue #1e66f5;
+@define-color color-lavender #7287fd;
+@define-color color-text #4c4f69;
+@define-color color-subtext1 #5c5f77;
+@define-color color-subtext0 #6c6f85;
+@define-color color-overlay2 #7c7f93;
+@define-color color-overlay1 #8c8fa1;
+@define-color color-overlay0 #9ca0b0;
+@define-color color-surface2 #acb0be;
+@define-color color-surface1 #bcc0cc;
+@define-color color-surface0 #ccd0da;
+@define-color color-base #eff1f5;
+@define-color color-mantle #e6e9ef;
+@define-color color-crust #dce0e8;
+
+/* -----------------------------------------------------------------------------
+ * Keyframes
+ * -------------------------------------------------------------------------- */
+
+@keyframes blink-warning {
+    70% {
+        color: @color-base;
+    }
+
+    to {
+        color: @color-base;
+        background-color: @color-peach;
+    }
+}
+
+@keyframes blink-critical {
+    70% {
+        color: @color-base;
+    }
+
+    to {
+        color: @color-base;
+        background-color: @color-peach;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+ * Base styles
+ * -------------------------------------------------------------------------- */
+
+/* Reset all styles */
 * {
-  border: none;
-  border-radius: 0px;
-  padding: 0;
-  margin: 0;
-  min-height: 0px;
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 12px;
-  opacity: 1.0;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
 }
 
-window#waybar {
-  background: #db4740;
+/* The whole bar */
+#waybar {
+    background-color: @color-base;
+    color: @color-text;
+    font-family: Inter, "Font Awesome 6 Free";
+    font-size: 14px;
 }
 
-.modules-left, .modules-right {
-  background: #333333;
+/* -----------------------------------------------------------------------------
+ * Module styles
+ * -------------------------------------------------------------------------- */
+
+/* Each module */
+#backlight,
+#battery,
+#clock,
+#cpu,
+#custom-keyboard-layout,
+#custom-wlsunset,
+#idle_inhibitor,
+#memory,
+#mode,
+#network,
+#pulseaudio,
+#temperature,
+#tray {
+    margin-left: 12px;
 }
 
-#window, #network, #cpu, #memory, #pulseaudio, #language, #clock {
-  color: #ffffff;
-  padding-left: 5px;
-  padding-right: 5px;
+#backlight {
+    /* No styles */
+}
+
+#battery {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.warning {
+    color: @color-peach;
+}
+
+#battery.critical {
+    color: @color-red;
+}
+
+#battery.warning.discharging {
+    animation-name: blink-warning;
+    animation-duration: 3s;
+}
+
+#battery.critical.discharging {
+    animation-name: blink-critical;
+    animation-duration: 2s;
+}
+
+#clock {
+    /* No styles */
+}
+
+#network {
+    /* No styles */
+}
+
+#network.disconnected {
+    color: @color-peach;
+}
+
+#pulseaudio {
+    /* No styles */
+}
+
+#pulseaudio.muted {
+    color: @color-peach;
+}
+
+#temperature {
+    /* No styles */
+}
+
+#temperature.critical {
+    color: @color-red;
+}
+
+#tray {
+    /* No styles */
 }
 
 #window {
-  color: #333333;
-  background: #db4740;
+    margin-left: 32px;
+    margin-right: 32px;
+    font-weight: 700;
 }
 
-#workspaces button {
-  color: #ffffff;
-  padding-left:  5px;
-  padding-right: 5px;
-  box-shadow: none;
-  text-shadow: none;
-  transition: none;
+#tags {
+    padding: 3px;
 }
 
-#workspaces button.empty:not(:hover):not(.active) {
-  color: #aaaaaa;
+#tags button {
+    min-width: 0;
+    padding: 0 8px;
+    margin: 0;
+    border: none;
+    background-color: @color-crust;
 }
 
-#workspaces button:hover {
-  color: #333333;
-  background: #db4740;
+#tags button.occupied {
+    background-color: #b4befe;
 }
 
-#workspaces button.active {
-  color: #333333;
-  background: #db4740;
+#tags button.focused {
+    background-color: @color-lavender;
+    color: @color-base;
+}
+
+#tags button.urgent {
+    background-color: @color-red;
+}
+
+#tags button:last-child {
+    border-radius: 0 8px 8px 0;
+    padding-right: 12px;
+}
+
+#tags button:hover {
+    background-color: @color-mantle;
+    color: @color-text;
+}
+
+.modules-right {
+    background-color: @color-crust;
+    border-radius: 8px 0 0 8px;
+    padding-right: 8px;
+    margin: 3px;
+}
+
+.modules-center {
+    background-color: @color-crust;
+    padding: 0 8px;
+    border-radius: 8px;
+    margin: 3px;
 }
