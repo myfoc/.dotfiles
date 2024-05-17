@@ -54,3 +54,6 @@ unfocused_hollow = false
 [cursor.style]
 blinking = "Always"
 shape = "Block"
+
+[env]
+LIBGL_ALWAYS_SOFTWARE = true
