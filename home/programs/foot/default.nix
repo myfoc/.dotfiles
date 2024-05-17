@@ -1,9 +1,7 @@
 { config, lib, pkgs, ... }: {
   programs.foot = {
-    enable = true; 
-    server = {
-      enable = true;
-    };
+    enable = true;
+    server.enable = true;
   };
 
   home.file.".config/foot" = {

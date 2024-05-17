@@ -1,7 +1,5 @@
 { config, lib, pkgs, ... }: {
-  programs.waybar = {
-    enable = true;
-  };
+  programs.waybar.enable = true;
 
   home.file.".config/waybar" = {
     recursive = true;
