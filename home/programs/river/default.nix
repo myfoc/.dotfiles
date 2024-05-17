@@ -1,5 +1,5 @@
 { config, lib, pkgs, ... }: {
-  services.river = {
+  wayland.windowManager.river = {
     enable = true;
     extraConfig = ''
       riverctl map normal Super Return spawn foot
