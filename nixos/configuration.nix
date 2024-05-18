@@ -1,11 +1,10 @@
 { inputs, config, pkgs, systemSettings, userSettings, ... }: {
   imports = [ ./hardware-configuration.nix ];
 
-  boot = {
-    kernelParams = [ "video=virtio" ];
-    loader.systemd-boot.enable = true;
-    loader.systemd-boot.configurationLimit = 3;
-    loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot.enable = true;
+    systemd-boot.configurationLimit = 3;
+    efi.canTouchEfiVariables = true;
   };
 
   nix.settings = {
@@ -24,7 +23,9 @@
   i18n.defaultLocale = systemSettings.locale;
 
   hardware.opengl.enable = true;
-  hardware.videoDrivers = [ "virtio" ];
+
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   sound.enable = true;
   security.rtkit.enable = true;
@@ -49,7 +50,7 @@
   users.users.${userSettings.username} = {
     isNormalUser = true;
     description = userSettings.name;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
   };
 
   system.stateVersion = systemSettings.version;
