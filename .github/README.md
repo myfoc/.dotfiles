@@ -1,14 +1,16 @@
 <div align="center">
 
-[![](https://readme-typing-svg.demolab.com?font=JetBrains&size=32&duration=3000&pause=1000&color=928374&center=true&vCenter=true&random=false&width=600&lines=My+NixOS+Dotfiles;CofymDD+Dotfiles;Hyprland+Dotfiles;NixOS+Dotfiles;CofymDD+Hyprland+NixOS+Dotfiles)](https://git.io/typing-svg)
+[![](https://readme-typing-svg.demolab.com?font=JetBrains&size=32&duration=3000&pause=1000&color=EBDBB2&center=true&vCenter=true&random=false&width=600&lines=My+NixOS+Dotfiles;CofymDD+Dotfiles;Hyprland+Dotfiles;NixOS+Dotfiles;CofymDD+Hyprland+NixOS+Dotfiles)](https://git.io/typing-svg)
 
-![](https://img.shields.io/github/stars/shvedes/dotfiles?style=for-the-badge&label=Stars&color=b57614)
-![](https://img.shields.io/github/last-commit/shvedes/dotfiles?style=for-the-badge&color=b57614)
-![](https://img.shields.io/github/license/shvedes/dotfiles?style=for-the-badge&color=b57614)
-
-![](https://img.shields.io/github/repo-size/shvedes/dotfiles?style=for-the-badge&logoColor=%23ffffff&label=Size&color=%23b57614)
+![](https://img.shields.io/github/stars/CofymDD/.dotfiles?style=for-the-badge&label=Stars&color=b57614)
+![](https://img.shields.io/github/last-commit/CofymDD/.dotfiles?style=for-the-badge&color=b57614)
+![](https://img.shields.io/github/repo-size/CofymDD/.dotfiles?style=for-the-badge&color=b57614)
 
 </div>
+
+![](https://preview.redd.it/hyprland-gruvin-v0-my6ax582ocxc1.png?width=1080&crop=smart&auto=webp&s=e45605d649a3c7af13811c87a5c3e096d1321895)
+
+##
 
 ### Applications:
 
