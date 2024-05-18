@@ -1,6 +1,7 @@
 { inputs, pkgs, systemSettings, userSettings, ... }: {
   imports = [
     ./programs
+    ./wallpapers
   ];
 
   home = {
