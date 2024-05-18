@@ -1,14 +1,11 @@
 { inputs, config, pkgs, systemSettings, userSettings, ... }: {
-  imports = [
-    ./hardware-configuration.nix
-  ];
+  imports = [ ./hardware-configuration.nix ];
 
-  boot.loader = {
-    systemd-boot = {
-      enable = true;
-      configurationLimit = 3;
-    };
-    efi.canTouchEfiVariables = true;
+  boot = {
+    kernelParams = [ "video=virtio" ];
+    loader.systemd-boot.enable = true;
+    loader.systemd-boot.configurationLimit = 3;
+    loader.efi.canTouchEfiVariables = true;
   };
 
   nix.settings = {
@@ -16,11 +13,7 @@
     auto-optimise-store = true;
   };
 
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
-    };
-  };
+  nixpkgs.config.allowUnfree = true;
 
   networking = {
     hostName = systemSettings.hostname;
@@ -30,12 +23,12 @@
   time.timeZone = systemSettings.timezone;
   i18n.defaultLocale = systemSettings.locale;
 
-  hardware = {
-    opengl.enable = true;
-  };
+  hardware.opengl.enable = true;
+  hardware.videoDrivers = [ "virtio" ];
 
   sound.enable = true;
   security.rtkit.enable = true;
+
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -50,20 +43,13 @@
       WLR_NO_HARDWARE_CURSORS = "1";
       NIXOS_OZONE_WL = "1";
     };
-
-    systemPackages = with pkgs; [
-      nano
-      wget
-      git
-    ];
+    systemPackages = with pkgs; [ nano wget git ];
   };
 
-  users.users = {
-    ${userSettings.username} = {
-      isNormalUser = true;
-      description = userSettings.name;
-      extraGroups = [ "networkmanager" "wheel" ];
-    };
+  users.users.${userSettings.username} = {
+    isNormalUser = true;
+    description = userSettings.name;
+    extraGroups = [ "networkmanager" "wheel" ];
   };
 
   system.stateVersion = systemSettings.version;
