@@ -2,11 +2,11 @@
 
 ### Applications:
 
-|                          |             NixOS 23.11               |
-|--------------------------|:-------------------------------------:|
-| **Desktop Environment**  |   [Hyprland](https://hyprland.org)      |
-| **Terminal Emulator**    |   [Foot](https://codeberg.org/dnkl/foot) |
-| **Display Server**       |   [Wayland](https://wayland.freedesktop.org)     |
+|                         |                NixOS 24.05                 |
+| ----------------------- | :----------------------------------------: |
+| **Desktop Environment** |      [Hyprland](https://hyprland.org)      |
+| **Terminal Emulator**   |   [Foot](https://codeberg.org/dnkl/foot)   |
+| **Display Server**      | [Wayland](https://wayland.freedesktop.org) |
 
 ### Directory Structure
 
@@ -26,6 +26,7 @@
 ### Installation
 
 0. Clone the repo:
+
 ```bash
 git clone https://github.com/CofymDD/.dotfiles.git ~/
 ```
@@ -45,11 +46,10 @@ chmod +x install.sh
 ```
 
 ##
+
 <div id="header" align="center">
     <a href="https://cofymdd.com">
         <img src="https://i.imgur.com/MlkPDUj.png" width="100"/>
     </a>
-    <a href="https://cofymdd.com">
-        <h3>CofymDD</h3>
-    </a>
+    <h3>CofymDD</h3>
 </div>
