@@ -1,4 +1,14 @@
-<h2 align="center">CofymDD NixOS Dotfiles</h2>
+<div align="center">
+
+[![](https://readme-typing-svg.demolab.com?font=JetBrains&size=32&duration=3000&pause=1000&color=928374&center=true&vCenter=true&random=false&width=600&lines=My+NixOS+Dotfiles;CofymDD+Dotfiles;Hyprland+Dotfiles;NixOS+Dotfiles;CofymDD+Hyprland+NixOS+Dotfiles)](https://git.io/typing-svg)
+
+![](https://img.shields.io/github/stars/shvedes/dotfiles?style=for-the-badge&label=Stars&color=b57614)
+![](https://img.shields.io/github/last-commit/shvedes/dotfiles?style=for-the-badge&color=b57614)
+![](https://img.shields.io/github/license/shvedes/dotfiles?style=for-the-badge&color=b57614)
+
+![](https://img.shields.io/github/repo-size/shvedes/dotfiles?style=for-the-badge&logoColor=%23ffffff&label=Size&color=%23b57614)
+
+</div>
 
 ### Applications:
 
