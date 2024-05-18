@@ -2,7 +2,6 @@
 padding.x = 10
 padding.y = 10
 opacity = 0.90
-blur = true
 
 [colors.primary]
 background = "#32302f"

@@ -24,9 +24,6 @@
 
   hardware.opengl.enable = true;
 
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
-
   sound.enable = true;
   security.rtkit.enable = true;
 
@@ -50,7 +47,7 @@
   users.users.${userSettings.username} = {
     isNormalUser = true;
     description = userSettings.name;
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" ];
   };
 
   system.stateVersion = systemSettings.version;
