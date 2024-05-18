@@ -1,6 +1,6 @@
 {
   imports = [
-    ./alacritty
+    ./foot
     ./hyprland
     ./packages
     ./waybar
