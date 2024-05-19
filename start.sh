@@ -47,10 +47,13 @@ n_reboot() {
 }
 
 n_install() {
-    repository_update
-    nixos_build
-    nixos_reboot
+    r_update
+    sleep 1
+    n_build
+    sleep 1
     log "@" "NixOS installed."
+    sleep 1
+    n_reboot
 }
 
 s_help() {
