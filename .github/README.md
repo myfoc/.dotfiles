@@ -8,7 +8,7 @@
 
 </div>
 
-![](https://preview.redd.it/hyprland-gruvin-v0-my6ax582ocxc1.png?width=1080&crop=smart&auto=webp&s=e45605d649a3c7af13811c87a5c3e096d1321895)
+![](./assets/screenshot.jpeg)
 
 ##
 
