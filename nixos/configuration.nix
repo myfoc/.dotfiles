@@ -54,7 +54,7 @@
     enable = true;
     settings = rec {
       initial_session = {
-        command = "${pkgs.hyprland}/bin/hyprland";
+        command = "Hyprland";
         user = "cofymdd";
       };
       default_session = initial_session;
