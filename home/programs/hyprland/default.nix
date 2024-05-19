@@ -3,6 +3,8 @@
 
   home.packages = [
     pkgs.hyprpaper
+    pkgs.hypridle
+    pkgs.hyprlock
   ];
 
   home.file.".config/hypr" = {

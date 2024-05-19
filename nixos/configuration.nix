@@ -41,7 +41,7 @@
       WLR_NO_HARDWARE_CURSORS = "1";
       NIXOS_OZONE_WL = "1";
     };
-    systemPackages = with pkgs; [ nano wget git ];
+    systemPackages = with pkgs; [ vim git ];
   };
 
   users.users.${userSettings.username} = {
