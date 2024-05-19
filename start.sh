@@ -95,7 +95,6 @@ main() {
         i)  n_install  ;;
         h)  s_help     ;;
         q)  s_quit     ;;
-        *)  printf '%s\n' "Invalid command";;
     esac
 }
 
