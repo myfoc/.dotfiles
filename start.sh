@@ -107,6 +107,7 @@ start() {
 
     cd "$directory" || exit 1
 
+    s_help
     while true
     do
         main
