@@ -50,5 +50,16 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
+  services.greetd = {
+    enable = true;
+    settings = rec {
+      initial_session = {
+        command = "${pkgs.hyprland}/bin/hyprland";
+        user = "cofymdd";
+      };
+      default_session = initial_session;
+    };
+  };
+
   system.stateVersion = systemSettings.version;
 }
