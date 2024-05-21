@@ -1,5 +1,8 @@
 * {
     border: none;
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
     font-family: JetBrainsMono Nerd Font;
     font-weight: 700;
     font-size: 11px;
@@ -7,10 +10,13 @@
 }
 
 tooltip {
-    color: #d5c4a1;
-    background: #433e3c;
+    background: #282828;
     border: 0px solid;
     border-radius: 0px;
+}
+
+tooltip label {
+    color: #d5c4a1;
 }
 
 window#waybar {
