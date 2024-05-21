@@ -32,7 +32,7 @@
   },
   "clock": {
     "interval": 1,
-    "format": "<span size='10000' foreground='#d79921'> </span> {:%I:%M:%S %p}",
+    "format": "<span size='9000' foreground='#d79921'></span><span size='6000'> </span> {:%I:%M:%S %p}",
     "tooltip": false,
   },
 }
