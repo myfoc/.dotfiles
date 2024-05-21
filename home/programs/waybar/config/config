@@ -38,7 +38,7 @@
     },
     "clock": {
         "interval": 1,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='10000' line_height='11000' rise='0' color='#689d6a'>&#xf017;</span> {:%I:%M:%S %p}",
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-1000' color='#d79921'>&#xf017;</span> {:%I:%M:%S %p}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "month",
