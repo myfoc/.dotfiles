@@ -5,6 +5,8 @@
 ![](https://img.shields.io/github/stars/CofymDD/.dotfiles?style=for-the-badge&label=Stars&color=cc241d)
 ![](https://img.shields.io/github/last-commit/CofymDD/.dotfiles?style=for-the-badge&color=689d6a)
 ![](https://img.shields.io/github/repo-size/CofymDD/.dotfiles?style=for-the-badge&color=458588)
+![](https://img.shields.io/tokei/lines/github/CofymDD/.dotfiles?style=for-the-badge&color=458588)
+![](https://tokei.rs/b1/github/CofymDD/.dotfiles?style=for-the-badge&color=d79921)
 
 </div>
 
