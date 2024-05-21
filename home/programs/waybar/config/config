@@ -32,10 +32,9 @@
   "network": {
 	"interval": 1,
 	"format-wifi": "<span foreground='#458588'>{icon}  </span>{essid}<span foreground='#458588'>      </span>{bandwidthUpBytes}<span foreground='#458588'>     </span>{bandwidthDownBytes}",
-    "format-disconnected": "",
-	"format-ethernet": "<span foreground='#d79921'>  </span>Connected",
-	"on-click-right-release": "alacritty --class nmtui -T 'Network Settings' -e nmtui",
-	"on-click-release": "$HOME/.config/waybar/scripts/network.sh",
+	"format-ethernet": "<span foreground='#458588'></span>{bandwidthUpBytes}<span foreground='#458588'></span>{bandwidthDownBytes}",
+	"format-disconnected": "",
+	"format-linked": "",
 	"format-icons": [
 		"󰤯 ",
 		"󰤟 ",
