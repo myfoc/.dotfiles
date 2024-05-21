@@ -20,9 +20,6 @@ window#waybar {
     margin-left: 4px;
     margin-top: 2px;
     margin-bottom: 2px;
-    box-shadow: none;
-    text-shadow: none;
-    transition: none;
 }
 
 #workspaces button.active {
@@ -39,6 +36,7 @@ window#waybar {
     background: #665c54;
 }
 
+#tray,
 #language,
 #workspaces {
     color: #d5c4a1;
