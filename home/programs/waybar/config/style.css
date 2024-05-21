@@ -39,6 +39,7 @@ window#waybar {
     background: #665c54;
 }
 
+#language,
 #workspaces {
     color: #d5c4a1;
     background: #433e3c;
