@@ -33,7 +33,7 @@
         "interval": 1,
         "tooltip": false,
         "format-wifi": "<span size='9000' foreground='#458588'>{icon}</span> <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes}",
-        "format-ethernet": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes} <span size='9000' foreground='#458588'>󰈀</span><span size='6000'> </span>",
+        "format-ethernet": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes} <span size='9000' foreground='#458588'>󰈀</span><span size='5000'> </span>",
         "format-linked": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes}",
         "format-disconnected": "",
 
