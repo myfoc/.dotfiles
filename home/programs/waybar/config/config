@@ -34,14 +34,13 @@
         "tooltip": true,
         "format": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes}",
         "tooltip-format-wifi": "<span size='9000' foreground='#458588'>{icon}</span><span size='6000'> </span> {essid}",
-        // "tooltip-format-ethernet": "<span size='9000' foreground='#458588'>󰈀</span><span size='6000'> </span> Connected",
-        "tooltip-format-ethernet": "<span size='9000' foreground='#458588'>{icon}</span><span size='6000'> </span>Connected",
+        "tooltip-format-ethernet": "<span size='9000' foreground='#458588'>󰈀</span><span size='6000'> </span> Connected",
         "tooltip-format-disconnected": "<span size='9000' foreground='#458588'>󱘖</span><span size='6000'> </span> Disconnected",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
     },
     "clock": {
         "interval": 1,
         "tooltip": false,
-        "format": "<span size='9000' foreground='#d79921'></span><span size='7000'> </span> {:%I:%M:%S %p}"
+        "format": "<span size='9000' foreground='#d79921'></span><span size='6000'> </span> {:%I:%M:%S %p}"
     }
 }
