@@ -9,7 +9,7 @@
     "hyprland/workspaces": {
         "tooltip": false,
         "format": "{icon}",
-        "sort-by-numbers": false,
+        "sort-by-numbers": true,
         "format-icons": {
             "1": "I",
             "2": "II",
@@ -25,7 +25,7 @@
     },
     "hyprland/language": {
         "tooltip": false,
-        "format": "<span size='9000' foreground='#689d6a'> </span> {}",
+        "format": "<span size='9000' foreground='#689d6a'></span><span size='9000'> </span> {}",
         "format-en": "ENG",
         "format-ru": "RUS"
     },
