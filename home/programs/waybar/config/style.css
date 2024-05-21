@@ -37,6 +37,7 @@ window#waybar {
 }
 
 #clock,
+#network,
 #language,
 #workspaces {
     color: #d5c4a1;
