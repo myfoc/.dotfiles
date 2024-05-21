@@ -8,7 +8,7 @@
 
 </div>
 
-![](./assets/screenshot.jpeg)
+![](./assets/screenshot.png)
 
 ##
 
