@@ -46,11 +46,11 @@
             "weeks-pos": "right",
             "on-scroll": 0,
             "format": {
-                "months": "<span color='#d79921'><b>{}</b></span>",
-                "days": "<span color='#d79921'><b>{}</b></span>",
+                "months": "<b>{}</b>",
+                "days": "<b>{}</b>",
                 "weeks": "<span color='#d79921'><b>W{}</b></span>",
                 "weekdays": "<span color='#d79921'><b>{}</b></span>",
-                "today": "<span color='#d79921'><b>{}</b></span>"
+                "today": "<span color='#d79921'><b><u>{}</u></b></span>"
             }
         },
         "tooltip": true
