@@ -25,14 +25,14 @@
       }
   },
   "hyprland/language": {
-    "format": "<span size='9000' foreground='#689d6a'>  </span>{}",
+    "format": "<span size='9000' foreground='#689d6a'></span>  {}",
 	"format-en": "ENG",
 	"format-ru": "RU",
 	"tooltip": false,
   },
   "clock": {
     "interval": 1,
-    "format": "<span size='9000' foreground='#d79921'>  </span>{:%I:%M:%S %p}",
+    "format": "<span size='9000' foreground='#d79921'></span>  {:%I:%M:%S %p}",
     "tooltip": false,
   },
 }
