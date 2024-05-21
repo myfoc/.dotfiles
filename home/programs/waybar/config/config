@@ -32,7 +32,7 @@
   "network": {
 	"interval": 1,
 	"format-wifi": "<span foreground='#458588'>{icon}  </span>{essid}<span foreground='#458588'>      </span>{bandwidthUpBytes}<span foreground='#458588'>     </span>{bandwidthDownBytes}",
-	"format-ethernet": "<span size='9000' foreground='#458588'></span> {bandwidthUpBytes}  <span size='9000' foreground='#458588'></span> {bandwidthDownBytes}",
+	"format-ethernet": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes}   <span size='9000' foreground='#458588'></span> {bandwidthDownBytes}",
 	"format-disconnected": "",
 	"format-linked": "",
 	"format-icons": [
