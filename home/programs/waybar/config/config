@@ -31,7 +31,7 @@
         "interval": 1,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#458588'>&#xf062;</span> {bandwidthUpBytes} <span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#458588'>&#xf063;</span> {bandwidthDownBytes}",
         "tooltip-format-wifi": "<span size='9000' foreground='#458588'>{icon}</span><span size='6000'> </span> {essid}",
-        "tooltip-format-ethernet": "<span size='9000' foreground='#458588'>󰈀</span><span size='6000'> </span> Connected",
+        "tooltip-format-ethernet": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#689d6a'>&#xf796;</span> Connected",
         "tooltip-format-disconnected": "<span size='9000' foreground='#458588'>󱘖</span><span size='6000'> </span> Disconnected",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
         "tooltip": true
