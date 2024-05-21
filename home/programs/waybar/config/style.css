@@ -6,6 +6,12 @@
     min-height: 0;
 }
 
+tooltip {
+    background: #282828;
+    border: 0px solid;
+    border-radius: 0px;
+}
+
 window#waybar {
     background: #282828;
     color: #ebdbb2;
