@@ -5,7 +5,7 @@
   "reload_style_on_change": true,
 
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "hyprland/language" ],
+  "modules-right": [ "hyprland/language", "clock" ],
 
   "hyprland/workspaces": {
       "format": "{icon}",
@@ -30,7 +30,7 @@
 	"format-ru": "RU",
 	"tooltip": false,
   },
-  "clock#time": {
+  "clock": {
     "interval": 1,
     "format": "<span foreground='#d79921' size='10000'> </span>{:%I:%M:%S %p}",
     "tooltip": false,
