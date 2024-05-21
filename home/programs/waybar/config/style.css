@@ -9,29 +9,26 @@
     min-height: 0;
 }
 
+window#waybar {
+    background: #282828;
+}
+
 tooltip {
     background: #282828;
-    border: 0px solid;
-    border-radius: 0px;
+    border: 0;
+    border-radius: 0;
 }
 
 tooltip label {
     color: #d5c4a1;
 }
 
-window#waybar {
-    background: #282828;
-}
-
 #workspaces button {
     padding: 0 0.6em;
     color: #a89984;
     background: #504945;
-    border-radius: 0px;
-    margin-right: 4px;
-    margin-left: 4px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    border-radius: 0;
+    margin: 2px 4px;
 }
 
 #workspaces button.active {
@@ -51,9 +48,6 @@ window#waybar {
     color: #d5c4a1;
     background: #433e3c;
     padding: 0 0.6em;
-    margin-right: 4px;
-    margin-left: 2px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border-radius: 0px;
+    margin: 4px 4px 4px 2px;
+    border-radius: 0;
 }
