@@ -7,8 +7,8 @@
   "modules-right": [ "network", "hyprland/language", "clock" ],
 
   "hyprland/workspaces": {
-      "format": "{icon}",
       "tooltip": false,
+      "format": "{icon}",
       "sort-by-numbers": false,
       "format-icons": {
 		  "1": "I",
@@ -24,15 +24,16 @@
       }
   },
   "hyprland/language": {
+    "tooltip": false,
     "format": "<span size='9000' foreground='#689d6a'> </span> {}",
 	"format-en": "ENG",
 	"format-ru": "RUS",
-	"tooltip": false,
   },
   "network": {
 	"interval": 1,
+	"tooltip": false,
 	"format-wifi": "<span foreground='#458588'>{icon}  </span>{essid}<span foreground='#458588'>      </span>{bandwidthUpBytes}<span foreground='#458588'>     </span>{bandwidthDownBytes}",
-	"format-ethernet": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes}   <span size='9000' foreground='#458588'></span> {bandwidthDownBytes}",
+	"format-ethernet": "<span size='9000' foreground='#458588'></span><span size='7000'> </span> {bandwidthUpBytes}  <span size='9000' foreground='#458588'></span><span size='7000'> </span> {bandwidthDownBytes}",
 	"format-disconnected": "",
 	"format-linked": "",
 	"format-icons": [
@@ -45,7 +46,7 @@
   },
   "clock": {
     "interval": 1,
-    "format": "<span size='9000' foreground='#d79921'></span><span size='6000'> </span> {:%I:%M:%S %p}",
     "tooltip": false,
+    "format": "<span size='9000' foreground='#d79921'></span><span size='7000'> </span> {:%I:%M:%S %p}",
   },
 }
