@@ -5,7 +5,7 @@
   "reload_style_on_change": true,
 
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "hyprland/language", "tray" ],
+  "modules-right": [ "hyprland/language" ],
 
   "hyprland/workspaces": {
       "format": "{icon}",
@@ -30,9 +30,9 @@
 	"format-ru": "RU",
 	"tooltip": false,
   },
-  "tray": {
-    "icon-size": 14,
-    "spacing": 10,
-	"show-passive-items": true
+  "clock#time": {
+    "interval": 1,
+    "format": "<span foreground='#d79921' size='10000'> </span>{:%I:%M:%S %p}",
+    "tooltip": false,
   },
 }
