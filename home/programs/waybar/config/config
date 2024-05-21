@@ -22,7 +22,7 @@
         "tooltip": false
     },
     "hyprland/language": {
-        "format": "<span font_family='Font Awesome 6 Free' font_size='10000' line_height='11000' rise='-2000' color='#689d6a'>&#xf11c;</span> {}",
+        "format": "<span font_family='Font Awesome 6 Free' font_size='10000' line_height='11000' rise='-1000' color='#689d6a'>&#xf11c;</span> {}",
         "format-en": "ENG",
         "format-ru": "RUS",
         "tooltip": false
@@ -38,7 +38,7 @@
     },
     "clock": {
         "interval": 1,
-        "format": "<span size='9000' foreground='#d79921'></span><span size='6000'> </span> {:%I:%M:%S %p}",
+        "format": "<span font_family='Font Awesome 6 Free' font_size='10000' line_height='11000' rise='0' color='#689d6a'>&#xf017;</span> {:%I:%M:%S %p}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "month",
