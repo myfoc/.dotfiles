@@ -31,12 +31,11 @@
     },
     "network": {
         "interval": 1,
-        "tooltip": false,
-        "format-wifi": "<span size='9000' foreground='#458588'>{icon}</span> <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes}",
-        "format-ethernet": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes} <span size='9000' foreground='#458588'>󰈀</span><span size='5000'> </span>",
-        "format-linked": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes}",
-        "format-disconnected": "",
-
+        "tooltip": true,
+        "format": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes}",
+        "tooltip-format-wifi": "<span size='9000' foreground='#458588'>{icon}</span><span size='6000'> </span> {essid}",
+        "tooltip-format-ethernet": "<span size='9000' foreground='#458588'>󰈀</span><span size='6000'> </span> Connected",
+        "tooltip-format-disconnected": "<span size='9000' foreground='#458588'>󱘖</span><span size='6000'> </span> Disconnected",
         "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "]
     },
     "clock": {
@@ -44,13 +43,4 @@
         "tooltip": false,
         "format": "<span size='9000' foreground='#d79921'></span><span size='7000'> </span> {:%I:%M:%S %p}"
     }
-    // "network": {
-    //       // "interface": "wlp2*", // (Optional) To force the use of this interface
-    //       "format-wifi": " ({signalStrength}%)",
-    //       "format-ethernet": " {bandwidthDownBytes}",
-    //       "tooltip-format": "{essid} {ipaddr}",
-    //       "format-linked": "{ifname} (No IP) ",
-    //       "format-disconnected": "Disconnected ⚠",
-    //       "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    // },
 }
