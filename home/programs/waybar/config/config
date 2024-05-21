@@ -4,7 +4,7 @@
   "height": 28,
 
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "hyprland/language", "clock" ],
+  "modules-right": [ "network", "hyprland/language", "clock" ],
 
   "hyprland/workspaces": {
       "format": "{icon}",
@@ -31,7 +31,7 @@
   },
   "network": {
 	"interval": 1,
-	"format-wifi": "<span foreground='#d79921'>{icon}  </span>{essid}<span foreground='#d79921'>      </span>{bandwidthUpBytes}<span foreground='#d79921'>     </span>{bandwidthDownBytes}",
+	"format-wifi": "<span foreground='#458588'>{icon}  </span>{essid}<span foreground='#458588'>      </span>{bandwidthUpBytes}<span foreground='#458588'>     </span>{bandwidthDownBytes}",
     "format-disconnected": "",
 	"format-ethernet": "<span foreground='#d79921'>  </span>Connected",
 	"on-click-right-release": "alacritty --class nmtui -T 'Network Settings' -e nmtui",
