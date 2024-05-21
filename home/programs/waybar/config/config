@@ -29,7 +29,7 @@
     },
     "network": {
         "interval": 1,
-        "format": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes}",
+        "format": "<span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthUpBytes} <span size='9000' foreground='#458588'></span><span size='3000'> </span> {bandwidthDownBytes}",
         "tooltip-format-wifi": "<span size='9000' foreground='#458588'>{icon}</span><span size='6000'> </span> {essid}",
         "tooltip-format-ethernet": "<span size='9000' foreground='#458588'>󰈀</span><span size='6000'> </span> Connected",
         "tooltip-format-disconnected": "<span size='9000' foreground='#458588'>󱘖</span><span size='6000'> </span> Disconnected",
