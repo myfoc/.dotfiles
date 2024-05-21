@@ -2,7 +2,6 @@
   "layer": "bottom",
   "position": "top",
   "height": 28,
-  "reload_style_on_change": true,
 
   "modules-center": [ "hyprland/workspaces" ],
   "modules-right": [ "hyprland/language", "clock" ],
