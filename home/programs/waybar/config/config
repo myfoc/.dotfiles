@@ -23,17 +23,17 @@
         "tooltip": false
     },
     "hyprland/language": {
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#689d6a'>&#xf11c;</span> {}",
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>&#xf11c;</span> {}",
         "format-en": "ENG",
         "format-ru": "RUS",
         "tooltip": false
     },
     "network": {
         "interval": 1,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#458588'>&#xf062;</span> {bandwidthUpBytes} <span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#458588'>&#xf063;</span> {bandwidthDownBytes}",
-        "tooltip-format-wifi": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#458588'>{icon}</span><span size='6000'> </span> {essid}",
-        "tooltip-format-ethernet": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#458588'>&#xf796;</span> Connected",
-        "tooltip-format-disconnected": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#458588'>&#xe560;</span> Disconnected",
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>&#xf062;</span> {bandwidthUpBytes} <span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>&#xf063;</span> {bandwidthDownBytes}",
+        "tooltip-format-wifi": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>{icon}</span><span size='6000'> </span> {essid}",
+        "tooltip-format-ethernet": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>&#xf796;</span> Connected",
+        "tooltip-format-disconnected": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>&#xe560;</span> Disconnected",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
         "tooltip": true
     },
