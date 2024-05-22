@@ -2,6 +2,7 @@
     "layer": "bottom",
     "position": "top",
     "height": 28,
+    "modules-left": ["cpu"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["network", "hyprland/language", "clock"],
     "hyprland/workspaces": {
@@ -54,5 +55,10 @@
             }
         },
         "tooltip": true
+    },
+    "cpu": {
+        "interval": 1,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>&#xf2db;</span> {used}",
+        "tooltip": false
     }
 }
