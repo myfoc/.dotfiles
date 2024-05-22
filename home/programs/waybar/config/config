@@ -68,7 +68,7 @@
     },
     "disk": {
         "interval": 60,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>&#xf0a0;</span> {used:0.1f}GiB",
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>&#xf0a0;</span> {used}",
         "tooltip": false
     }
 }
