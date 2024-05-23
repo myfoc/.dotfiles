@@ -14,9 +14,9 @@
     target = ".config/hypr";
   };
 
-  home.file."~/.icons" = {
+  home.file.".icons" = {
     recursive = true;
     source = ./cursor;
-    target = "~/.icons";
+    target = ".icons";
   };
 }
