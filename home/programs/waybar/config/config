@@ -83,11 +83,14 @@
         "format-icons": ["", "", "", "", ""],
         "tooltip": false
     },
+
+    // While im on virtual machine, i use custom battery module
     "custom/battery": {
         "interval": 0,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> 100%",
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> 100%",
         "tooltip": false
     },
+
     "hyprland/language": {
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {}",
         "format-en": "ENG",
