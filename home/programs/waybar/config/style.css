@@ -49,8 +49,7 @@ tooltip label {
 #wireplumber,
 #battery,
 #language,
-#clock,
-#tray {
+#clock {
     color: #d5c4a1;
     background: #433e3c;
     padding: 0 0.6em;

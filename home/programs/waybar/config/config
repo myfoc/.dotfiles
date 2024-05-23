@@ -4,7 +4,7 @@
     "height": 28,
     "modules-left": ["cpu", "memory", "disk", "network"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wireplumber", "battery", "hyprland/language", "clock", "tray"],
+    "modules-right": ["wireplumber", "battery", "hyprland/language", "clock"],
     "cpu": {
         "interval": 1,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {usage}%",
@@ -46,6 +46,28 @@
         "sort-by-numbers": true,
         "tooltip": false
     },
+    "privacy": {
+        "icon-spacing": 4,
+        "icon-size": 18,
+        "transition-duration": 250,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-out",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            }
+        ]
+    },
     "wireplumber": {
         "scroll-step": 0.0,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>{icon}</span> {volume}%",
@@ -85,10 +107,5 @@
             }
         },
         "tooltip": true
-    },
-    "tray": {
-        "icon-size": 14,
-        "spacing": 10,
-        "show-passive-items": true
     }
 }
