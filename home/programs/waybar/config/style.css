@@ -44,12 +44,10 @@ tooltip label {
 #cpu,
 #memory,
 #disk,
-#bluetooth,
 #network,
 #workspaces,
 #wireplumber,
 #battery,
-#custom-battery,
 #language,
 #clock,
 #tray {
