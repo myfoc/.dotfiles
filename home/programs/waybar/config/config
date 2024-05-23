@@ -57,7 +57,7 @@
         "interval": 60,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>{icon}</span> {capacity}%",
         "format-plugged": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {capacity}%",
-        "format-charging": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {capacity}%",
+        "format-charging": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {capacity}%",
         "format-icons": ["", "", "", "", ""],
         "tooltip": false
     },
