@@ -19,6 +19,8 @@
     networkmanager.enable = true;
   };
 
+  services.networkmanagerapplet.enable = true;
+
   time.timeZone = systemSettings.timezone;
   i18n.defaultLocale = systemSettings.locale;
 
