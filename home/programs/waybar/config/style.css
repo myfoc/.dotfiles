@@ -46,7 +46,8 @@ tooltip label {
 #disk,
 #network,
 #workspaces,
-#wireplumber #language,
+#wireplumber,
+#language,
 #clock,
 #tray {
     color: #d5c4a1;
