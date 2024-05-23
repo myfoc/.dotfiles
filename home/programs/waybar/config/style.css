@@ -42,13 +42,13 @@ tooltip label {
 }
 
 #cpu,
-#disk,
-#clock,
 #memory,
+#disk,
 #network,
-#language,
 #workspaces,
-#wireplumber {
+#wireplumber #language,
+#clock,
+#tray {
     color: #d5c4a1;
     background: #433e3c;
     padding: 0 0.6em;

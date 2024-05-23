@@ -4,7 +4,31 @@
     "height": 28,
     "modules-left": ["cpu", "memory", "disk", "network"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wireplumber", "hyprland/language", "clock"],
+    "modules-right": ["wireplumber", "hyprland/language", "clock", "tray"],
+    "cpu": {
+        "interval": 1,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "interval": 1,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {used:0.1f}GiB",
+        "tooltip": false
+    },
+    "disk": {
+        "interval": 60,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {used}",
+        "tooltip": false
+    },
+    "network": {
+        "interval": 1,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {bandwidthUpBytes} <span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {bandwidthDownBytes}",
+        "tooltip-format-wifi": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>{icon}</span><span size='6000'> </span> {essid}",
+        "tooltip-format-ethernet": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> Connected",
+        "tooltip-format-disconnected": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> Disconnected",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "tooltip": true
+    },
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -22,20 +46,18 @@
         "sort-by-numbers": true,
         "tooltip": false
     },
+    "wireplumber": {
+        "scroll-step": 0.0,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>{icon}</span> {volume}%",
+        "format-muted": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> Muted",
+        "format-icons": ["", "", ""],
+        "tooltip": false
+    },
     "hyprland/language": {
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {}",
         "format-en": "ENG",
         "format-ru": "RUS",
         "tooltip": false
-    },
-    "network": {
-        "interval": 1,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {bandwidthUpBytes} <span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {bandwidthDownBytes}",
-        "tooltip-format-wifi": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>{icon}</span><span size='6000'> </span> {essid}",
-        "tooltip-format-ethernet": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> Connected",
-        "tooltip-format-disconnected": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> Disconnected",
-        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-        "tooltip": true
     },
     "clock": {
         "interval": 1,
@@ -56,28 +78,9 @@
         },
         "tooltip": true
     },
-    "cpu": {
-        "interval": 1,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {usage}%",
-        "tooltip": false
-    },
-    "memory": {
-        "interval": 1,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {used:0.1f}GiB",
-        "tooltip": false
-    },
-    "disk": {
-        "interval": 60,
-        "max-length": 7,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {used}",
-        "tooltip": false
-    },
-    "wireplumber": {
-        "scroll-step": 0.0,
-        "max-length": 7,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>{icon}</span> {volume}%",
-        "format-muted": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> Muted",
-        "format-icons": ["", "", ""],
-        "tooltip": false
+    "tray": {
+        "icon-size": 14,
+        "spacing": 10,
+        "show-passive-items": true
     }
 }
