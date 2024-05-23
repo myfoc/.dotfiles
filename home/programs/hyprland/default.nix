@@ -2,7 +2,6 @@
   wayland.windowManager.hyprland.enable = true;
 
   home.packages = [
-    pkgs.hyprcursor
     pkgs.hyprpaper
     pkgs.hypridle
     pkgs.hyprlock
@@ -12,11 +11,5 @@
     recursive = true;
     source = ./config;
     target = ".config/hypr";
-  };
-
-  home.file.".icons" = {
-    recursive = true;
-    source = ./cursor;
-    target = ".icons";
   };
 }
