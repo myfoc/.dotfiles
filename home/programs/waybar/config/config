@@ -72,18 +72,11 @@
         "tooltip": false
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted": " Muted",
-        "scroll-step": 1,
-        "on-click": "pavucontrol",
+        "scroll-step": 0,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>{icon}</span> {volume}%",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", "墳", ""]
-        }
+            "default": ["&#f028;"]
+        },
+        "tooltip": false
     }
 }
