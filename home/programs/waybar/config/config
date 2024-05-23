@@ -75,6 +75,7 @@
         "scroll-step": 0,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>{icon}</span> {volume}% {format_source}",
         "format-source": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {volume}%",
+        "format-source-muted": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span>",
         "format-icons": {
             "default": [""]
         },
