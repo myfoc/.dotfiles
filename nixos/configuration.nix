@@ -14,6 +14,9 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  services.spice-vdagentd.enable = true;
+  services.qemuGuest.enable = true;
+
   networking = {
     hostName = systemSettings.hostname;
     networkmanager.enable = true;
