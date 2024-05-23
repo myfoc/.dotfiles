@@ -2,7 +2,7 @@
     "layer": "bottom",
     "position": "top",
     "height": 28,
-    "modules-left": ["cpu", "memory", "disk", "network"],
+    "modules-left": ["cpu", "memory", "disk", "bluetooth", "network"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["wireplumber", "battery", "custom/battery", "hyprland/language", "clock", "tray"],
     "cpu": {
