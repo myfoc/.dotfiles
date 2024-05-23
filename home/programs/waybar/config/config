@@ -2,9 +2,9 @@
     "layer": "bottom",
     "position": "top",
     "height": 28,
-    "modules-left": ["cpu", "memory", "disk"],
+    "modules-left": ["cpu", "memory", "disk", "network"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["network", "hyprland/language", "clock"],
+    "modules-right": ["pulseaudio", "hyprland/language", "clock"],
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -70,5 +70,20 @@
         "interval": 60,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'>&#xf0a0;</span> {used}",
         "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", "墳", ""]
+        }
     }
 }
