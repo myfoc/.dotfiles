@@ -19,10 +19,6 @@
     networkmanager.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    network-manager-applet
-  ];
-
   time.timeZone = systemSettings.timezone;
   i18n.defaultLocale = systemSettings.locale;
 
