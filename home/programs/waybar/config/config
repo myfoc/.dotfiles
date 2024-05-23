@@ -4,7 +4,7 @@
     "height": 28,
     "modules-left": ["cpu", "memory", "disk", "network"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["wireplumber", "battery", "hyprland/language", "clock"],
+    "modules-right": ["privacy", "wireplumber", "battery", "custom/battery", "hyprland/language", "clock"],
     "cpu": {
         "interval": 1,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {usage}%",
@@ -81,6 +81,11 @@
         "format-plugged": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {capacity}%",
         "format-charging": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> {capacity}%",
         "format-icons": ["", "", "", "", ""],
+        "tooltip": false
+    },
+    "custom/battery": {
+        "interval": 0,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500' color='#d79921'></span> 100%",
         "tooltip": false
     },
     "hyprland/language": {
