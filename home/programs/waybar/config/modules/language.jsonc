@@ -1,0 +1,8 @@
+{
+    "hyprland/language": {
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {}",
+        "format-en": "ENG",
+        "format-ru": "RUS",
+        "tooltip": false
+    }
+}

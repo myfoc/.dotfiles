@@ -1,0 +1,9 @@
+{
+    "wireplumber": {
+        "scroll-step": 0.0,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'>{icon}</span> {volume}%",
+        "format-muted": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> Muted",
+        "format-icons": ["", "", ""],
+        "tooltip": false
+    }
+}

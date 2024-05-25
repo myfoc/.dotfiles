@@ -1,0 +1,16 @@
+{
+    "battery": {
+        "interval": 60,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'>{icon}</span> {capacity}%",
+        "format-plugged": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {capacity}%",
+        "format-charging": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip": false
+    },
+
+    "custom/battery": {
+        "interval": 0,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> 100%",
+        "tooltip": false
+    }
+}
