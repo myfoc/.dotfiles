@@ -12,7 +12,7 @@
 window#waybar,
 tooltip {
     background: #282828;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 tooltip label {
@@ -24,7 +24,7 @@ tooltip label {
     color: #a89984;
     background: #504945;
     margin: 2px 4px;
-    border-radius: 2.5px;
+    border-radius: 1px;
 }
 
 #workspaces button.active {
@@ -52,5 +52,5 @@ tooltip label {
     background: #433e3c;
     padding: 0 0.6em;
     margin: 4px 4px 4px 2px;
-    border-radius: 2.5px;
+    border-radius: 2px;
 }
