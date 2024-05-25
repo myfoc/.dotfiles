@@ -23,6 +23,7 @@ tooltip label {
     padding: 0 0.6em;
     color: #a89984;
     background: #504945;
+    border-radius: 0px;
     margin: 2px 4px;
 }
 
