@@ -2,10 +2,7 @@
     "network": {
         "interval": 1,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {bandwidthUpBytes} <span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {bandwidthDownBytes}",
-        "tooltip-format-wifi": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'>{icon}</span><span size='6000'> </span> {essid}",
-        "tooltip-format-ethernet": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> Connected",
-        "tooltip-format-disconnected": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> Disconnected",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-        "tooltip": true
+        "tooltip": false
     }
 }
