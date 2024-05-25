@@ -9,14 +9,10 @@
     min-height: 0;
 }
 
-window#waybar {
-    background: #282828;
-}
-
+window#waybar,
 tooltip {
     background: #282828;
-    border: 0;
-    border-radius: 0;
+    border-radius: 5px;
 }
 
 tooltip label {
@@ -27,7 +23,6 @@ tooltip label {
     padding: 0 0.6em;
     color: #a89984;
     background: #504945;
-    border-radius: 0;
     margin: 2px 4px;
 }
 
