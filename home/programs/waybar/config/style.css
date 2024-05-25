@@ -23,7 +23,7 @@ tooltip label {
     padding: 0 0.6em;
     color: #a89984;
     background: #504945;
-    border-radius: 0px;
+    border-radius: 5px;
     margin: 2px 4px;
 }
 
@@ -52,5 +52,5 @@ tooltip label {
     background: #433e3c;
     padding: 0 0.6em;
     margin: 4px 4px 4px 2px;
-    border-radius: 0;
+    border-radius: 5px;
 }
