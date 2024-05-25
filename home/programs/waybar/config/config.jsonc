@@ -3,7 +3,7 @@
     "position": "top",
     "height": 28,
 
-    "include": ["~/.config/waybar/modules/cpu.json"],
+    "include": ["~/.config/waybar/modules/cpu.jsonc"],
 
     "modules-left": ["cpu", "memory", "disk", "network"],
     "modules-center": ["hyprland/workspaces"],
