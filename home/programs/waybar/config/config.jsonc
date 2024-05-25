@@ -3,31 +3,16 @@
     "position": "top",
     "height": 28,
 
-    "include": ["~/.config/waybar/modules/cpu.jsonc"],
+    "include": [
+        "~/.config/waybar/modules/cpu.jsonc",
+        "~/.config/waybar/modules/memory.jsonc",
+        "~/.config/waybar/modules/disk.jsonc"
+    ],
 
     "modules-left": ["cpu", "memory", "disk", "network"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["privacy", "wireplumber", "battery", "custom/battery", "hyprland/language", "clock"],
+    "modules-right": ["wireplumber", "custom/battery", "hyprland/language", "clock"],
 
-    "memory": {
-        "interval": 1,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {used:0.1f}GiB",
-        "tooltip": false
-    },
-    "disk": {
-        "interval": 60,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {used}",
-        "tooltip": false
-    },
-    "network": {
-        "interval": 1,
-        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {bandwidthUpBytes} <span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {bandwidthDownBytes}",
-        "tooltip-format-wifi": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'>{icon}</span><span size='6000'> </span> {essid}",
-        "tooltip-format-ethernet": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> Connected",
-        "tooltip-format-disconnected": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> Disconnected",
-        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-        "tooltip": true
-    },
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -45,28 +30,6 @@
         "sort-by-numbers": true,
         "tooltip": false
     },
-    "privacy": {
-        "icon-spacing": 4,
-        "icon-size": 18,
-        "transition-duration": 250,
-        "modules": [
-            {
-                "type": "screenshare",
-                "tooltip": true,
-                "tooltip-icon-size": 24
-            },
-            {
-                "type": "audio-out",
-                "tooltip": true,
-                "tooltip-icon-size": 24
-            },
-            {
-                "type": "audio-in",
-                "tooltip": true,
-                "tooltip-icon-size": 24
-            }
-        ]
-    },
     "wireplumber": {
         "scroll-step": 0.0,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'>{icon}</span> {volume}%",
@@ -82,14 +45,11 @@
         "format-icons": ["", "", "", "", ""],
         "tooltip": false
     },
-
-    // While im on virtual machine, i use custom battery module
     "custom/battery": {
         "interval": 0,
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> 100%",
         "tooltip": false
     },
-
     "hyprland/language": {
         "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {}",
         "format-en": "ENG",
