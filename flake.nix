@@ -3,11 +3,11 @@
 
   inputs = {
     nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
+      url = "github:nixos/nixpkgs/nixos-24.05";
     };
 
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -19,7 +19,7 @@
       hostname = "nixos";
       timezone = "Europe/Bratislava";
       locale = "en_US.UTF-8";
-      version = "23.11";
+      version = "24.05";
     };
 
     userSettings = {
