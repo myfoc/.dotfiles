@@ -1,0 +1,7 @@
+{
+    "cpu": {
+        "interval": 1,
+        "format": "<span font_family='Font Awesome 6 Free' font_size='9000' line_height='11000' rise='-500'></span> {usage}%",
+        "tooltip": false
+    }
+}
