@@ -24,7 +24,7 @@ tooltip label {
     color: #a89984;
     background: #504945;
     margin: 2px 4px;
-    border-radius: 1px;
+    border-radius: 2px;
 }
 
 #workspaces button.active {
@@ -42,7 +42,6 @@ tooltip label {
 #disk,
 #network,
 #workspaces,
-#privacy,
 #wireplumber,
 #battery,
 #custom-battery,
