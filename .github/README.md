@@ -6,6 +6,7 @@
 ![](https://img.shields.io/github/stars/CofymDD/.dotfiles?style=for-the-badge&labelColor=433e3c&color=d5c4a1)
 ![](https://img.shields.io/github/last-commit/CofymDD/.dotfiles?style=for-the-badge&labelColor=433e3c&color=d5c4a1)
 ![](https://img.shields.io/github/repo-size/CofymDD/.dotfiles?style=for-the-badge&labelColor=433e3c&color=d5c4a1)
+
 ![](https://wakatime.com/badge/user/e3edc2db-5b7e-46f8-8a21-e79a3d7935fe/project/018e4e3e-078b-4075-8a68-55d934a6fd52.svg?style=for-the-badge&labelColor=433e3c&color=d5c4a1)
 
 </div>
