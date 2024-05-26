@@ -2,10 +2,9 @@
 
 [![](https://readme-typing-svg.demolab.com?font=JetBrains&size=32&duration=3000&pause=1000&color=EBDBB2&center=true&vCenter=true&random=false&width=600&lines=My+NixOS+Dotfiles;CofymDD+Dotfiles;Hyprland+Dotfiles;NixOS+Dotfiles;CofymDD+Hyprland+NixOS+Dotfiles)](https://git.io/typing-svg)
 
-![](https://img.shields.io/github/stars/CofymDD/.dotfiles?style=for-the-badge&label=Stars&color=cc241d)
-![](https://img.shields.io/github/last-commit/CofymDD/.dotfiles?style=for-the-badge&color=458588)
-![](https://img.shields.io/github/repo-size/CofymDD/.dotfiles?style=for-the-badge&color=689d6a)
-![](https://tokei.rs/b1/github/CofymDD/.dotfiles?style=for-the-badge&color=d79921)
+![](https://img.shields.io/github/stars/CofymDD/.dotfiles?style=for-the-badge&label=Stars&labelColor=433e3c&color=d5c4a1)
+![](https://img.shields.io/github/last-commit/CofymDD/.dotfiles?style=for-the-badge&label=Stars&labelColor=433e3c&color=d5c4a1)
+![](https://img.shields.io/github/repo-size/CofymDD/.dotfiles?style=for-the-badge&label=Stars&labelColor=433e3c&color=d5c4a1)
 
 </div>
 
