@@ -11,9 +11,9 @@
             "format": {
                 "months": "<b>{}</b>",
                 "days": "<b>{}</b>",
-                "weeks": "<span><b>W{}</b></span>",
-                "weekdays": "<span><b>{}</b></span>",
-                "today": "<span><b>{}</b></span>"
+                "weeks": "<b>W{}</b>",
+                "weekdays": "<b>{}</b>",
+                "today": "<b><u>{}<u></b>"
             }
         },
         "tooltip": true

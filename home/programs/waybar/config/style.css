@@ -1,15 +1,19 @@
 * {
     border: none;
     box-shadow: none;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-size: 11px;
+    font-weight: 700;
+    min-height: 0;
     text-shadow: none;
     transition: none;
-    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
-    font-weight: 700;
-    font-size: 11px;
-    min-height: 0;
 }
 
-window#waybar,
+window#waybar {
+    background: #282828;
+    border-radius: 4px;
+}
+
 tooltip {
     background: #282828;
     border-radius: 4px;
@@ -19,37 +23,37 @@ tooltip label {
     color: #d5c4a1;
 }
 
-#workspaces button {
-    padding: 0 0.6em;
-    color: #a89984;
-    background: #504945;
-    margin: 2px 4px;
+#battery,
+#clock,
+#cpu,
+#custom-battery,
+#disk,
+#language,
+#memory,
+#network,
+#wireplumber,
+#workspaces {
+    background: #433e3c;
     border-radius: 2px;
+    color: #d5c4a1;
+    margin: 4px 4px;
+    padding: 0 0.6em;
+}
+
+#workspaces button {
+    background: #504945;
+    border-radius: 2px;
+    color: #a89984;
+    margin: 2px 4px;
+    padding: 0 0.6em;
 }
 
 #workspaces button.active {
-    color: #ebdbb2;
     background: #665c54;
+    color: #ebdbb2;
 }
 
 #workspaces button.urgent {
-    color: #1d2021;
     background: #fb4934;
-}
-
-#cpu,
-#memory,
-#disk,
-#network,
-#workspaces,
-#wireplumber,
-#battery,
-#custom-battery,
-#language,
-#clock {
-    color: #d5c4a1;
-    background: #433e3c;
-    padding: 0 0.6em;
-    margin: 4px 4px;
-    border-radius: 2px;
+    color: #1d2021;
 }
