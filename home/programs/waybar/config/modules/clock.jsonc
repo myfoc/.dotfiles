@@ -13,7 +13,7 @@
                 "days": "<b>{}</b>",
                 "weeks": "<b>W{}</b>",
                 "weekdays": "<b>{}</b>",
-                "today": "<b><u>{}<u></b>"
+                "today": "<b><u>{}</u></b>"
             }
         },
         "tooltip": true
