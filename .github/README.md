@@ -1,4 +1,3 @@
-<!--suppress HtmlDeprecatedAttribute -->
 <div align="center">
 
 [![](https://readme-typing-svg.demolab.com?font=JetBrains&size=32&duration=3000&pause=1000&color=EBDBB2&center=true&vCenter=true&random=false&width=600&lines=My+NixOS+Dotfiles;CofymDD+Dotfiles;Hyprland+Dotfiles;NixOS+Dotfiles;CofymDD+Hyprland+NixOS+Dotfiles)](https://git.io/typing-svg)

@@ -57,7 +57,7 @@
     enable = true;
     settings = rec {
       initial_session = {
-        command = "Hyprland";
+        command = "river";
         user = "cofymdd";
       };
       default_session = initial_session;

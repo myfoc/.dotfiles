@@ -1,7 +1,7 @@
 {
   imports = [
     ./foot
-    ./hyprland
+    ./river
     ./packages
     ./waybar
   ];
