@@ -2,22 +2,8 @@
   wayland.windowManager.river = {
     enable = true;
     extraConfig = ''
-# Super+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super Return spawn foot
-
-# Super+Space to start wofi launcher
-riverctl map normal Super Space spawn "wofi --show drun -i --allow-images --prompt Search"
-
-# Super+Q to close the focused view
 riverctl map normal Super Q close
-
-# Super+Shift+X to show wofi power menu
-riverctl map normal Super+Shift X spawn "$HOME/bin/wofi-power.sh"
-
-# Super+Shift+S to take a screenshot
-riverctl map normal Super+Shift S spawn "grim"
-
-# Super+Shift+E to exit river
 riverctl map normal Super+Shift E exit
 
 # Super+J and Super+K to focus the next/previous view in the layout stack

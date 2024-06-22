@@ -1,28 +1,26 @@
-@import url('theme.css');
-
 * {
-    border: none;
-    box-shadow: none;
-    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
-    font-size: 11px;
-    font-weight: 700;
-    min-height: 0;
-    text-shadow: none;
-    transition: none;
+	border: none;
+	box-shadow: none;
+	font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+	font-size: 11px;
+	font-weight: 700;
+	min-height: 0;
+	text-shadow: none;
+	transition: none;
 }
 
 window#waybar {
-    background: var(--base00);
-    border-radius: 4px;
+	background: var(#282828);
+	border-radius: 4px;
 }
 
 tooltip {
-    background: var(--base00);
-    border-radius: 4px;
+	background: var(#282828);
+	border-radius: 4px;
 }
 
 tooltip label {
-    color: var(--base05);
+	color: var(#d5c4a1);
 }
 
 #battery,
@@ -35,27 +33,27 @@ tooltip label {
 #network,
 #wireplumber,
 #workspaces {
-    background: #433e3c;
-    border-radius: 2px;
-    color: var(--base05);
-    margin: 4px 4px;
-    padding: 0 0.6em;
+	background: #433e3c;
+	border-radius: 2px;
+	color: var(#d5c4a1);
+	margin: 4px 4px;
+	padding: 0 0.6em;
 }
 
 #workspaces button {
-    background: var(--base02);
-    border-radius: 2px;
-    color: #a89984;
-    margin: 2px 4px;
-    padding: 0 0.6em;
+	background: var(#504945);
+	border-radius: 2px;
+	color: #a89984;
+	margin: 2px 4px;
+	padding: 0 0.6em;
 }
 
 #workspaces button.active {
-    background: #665c54;
-    color: #ebdbb2;
+	background: #665c54;
+	color: #ebdbb2;
 }
 
 #workspaces button.urgent {
-    background: #fb4934;
-    color: #1d2021;
+	background: #fb4934;
+	color: #1d2021;
 }
