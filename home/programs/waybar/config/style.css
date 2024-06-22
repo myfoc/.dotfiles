@@ -10,17 +10,17 @@
 }
 
 window#waybar {
-	background: var(#282828);
+	background: #282828;
 	border-radius: 4px;
 }
 
 tooltip {
-	background: var(#282828);
+	background: #282828;
 	border-radius: 4px;
 }
 
 tooltip label {
-	color: var(#d5c4a1);
+	color: #d5c4a1;
 }
 
 #battery,
@@ -35,13 +35,13 @@ tooltip label {
 #workspaces {
 	background: #433e3c;
 	border-radius: 2px;
-	color: var(#d5c4a1);
+	color: #d5c4a1;
 	margin: 4px 4px;
 	padding: 0 0.6em;
 }
 
 #workspaces button {
-	background: var(#504945);
+	background: #504945;
 	border-radius: 2px;
 	color: #a89984;
 	margin: 2px 4px;
